@@ -1,0 +1,63 @@
+Internet & Basics:
+   Internet is Network of Networks. www stands for world wide web is implemented by Tim Berner's Lee.
+   when we enter google.com(url) in browser, browser requests ISP(like jio,airtel), then it moves to DNS(Domain Name System), it will lead to server by IP address. server will respond and client recieves HTML,CSS,Js
+   Domain(.com,in etc..,),URL(uniform resource locator), http vs https(SSL- secure socket layer certificate)
+   Basic Linux: cd-- change directory
+   cd folder-name---> it will make control forward to another folder
+   cd..---> it will make control back to previos folder
+   ls-->list of all
+   mkdir-->create a directory
+   rmdir--->remobes the directory
+  code Editor:Visual studio code
+   extensions(live server,prettier)
+   autosave+wordwrap
+
+Basic HTML:
+   html is maintained by tags and elements. elements are nothing but content embraced by open and close tags.
+   <html>
+   <head><!--comment-->
+       <title></title>
+   </head>
+   <body>
+   </body>
+   </html>
+
+How to Maintain a Blog?:
+  We can maintain a basic Blog in Hashnode. hashnode and dev are famous communities for developers.
+  create an account in hashnode and a blog in hashnode. and click write at top and write an article on what you know
+Git & GitHub:
+Git is a application which is used for version control. git is a centralized version control system. git keeps track of all your versions, changes and updates.
+git will contain three phases
+Working Phase/working Area: git init
+Staging phase/staging Area: git add .
+Local Repository: git commit -m "message"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
