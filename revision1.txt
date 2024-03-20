@@ -31,7 +31,14 @@ git will contain three phases
 Working Phase/working Area: git init
 Staging phase/staging Area: git add .
 Local Repository: git commit -m "message"
+to solve who r  u? 
+git config --global user.email "your email id"
+git config --global user.name "username"
 
+github is a platform created by microsoft where developers share , deploy and merge codes 
+
+git remote add origin "link"
+git push -u origin main
 
 
 
