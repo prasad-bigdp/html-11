@@ -1,0 +1,21 @@
+//We discusse in HTML till tables
+Just understand how css works
+CSS: cascading style sheets. these are used to include styling/designing into Web pages.
+There are three ways to achieve CSS.
+1. Inline: Inline css means in the line of html element, style will applied as a attribute.
+<h1 style="color:red">something</h1> 
+2. Internal: Internal styling means apply style as a element
+<style>
+   selector{
+    property-name:value;
+   }
+</style>
+/* selectors can be directly tagnames like h1,div etc.., or classname like 
+.class1 , .class2 etcc., or id names like #id1,#id2 etc..,
+
+3. External CSS:
+ We can write css in separate file with dot css extension and link that css into html file
+ <link rel="stylesheet" href="link" />
+
+ CSS BAsic Properties
+ background color(hexcode,colorname,rgb,rgba,linear-gradient,radialgradient),color,text-align,background-image

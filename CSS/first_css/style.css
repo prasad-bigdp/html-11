@@ -1,0 +1,18 @@
+#bd
+{
+    /* background-image:url('https://i.pinimg.com/736x/dd/97/3a/dd973ac116a977c8dd5296b0da504b8c.jpg');
+    background-size: cover; */
+   /* background: linear-gradient(red,blue,red,blue,red,blue,red,blue); */
+   background:radial-gradient(aqua,black);
+       background-repeat:no-repeat;
+       height: 100vh;
+    color: white;
+}
+
+#para1,#para2
+{
+    background-color: red;
+    padding-bottom: 50px;
+    margin-top:50px;
+    border: 1px solid yellow;
+}
