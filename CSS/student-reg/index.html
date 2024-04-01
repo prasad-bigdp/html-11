@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="shortcut icon"
+            href="https://img.freepik.com/free-vector/basic-rgb_53876-36894.jpg?t=st=1711952685~exp=1711956285~hmac=4b3c4b5ee57cf207d756f55d9f52e24e002320f57ed04e72d06fe0e0cd49899b&w=740"
+            type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <h1 class="title">Student Registration Form</h1>
+        <form action="main.py">
+            <div>
+                <label for=""></label> <input type="text" value="MR." disabled>
+                 <label for="fn">First Name: <sup class="re">*</sup></label>
+                <input type="text" id="fn" name="fname" placeholder="Enter first Name" required>
+                <label for="ln">Last Name:</label>
+                <input type="text" id="ln" name="lname" placeholder="Enter Last Name">
+            </div><br>
+           
+            <div>
+                <label for="em">Email:</label>
+                <input type="email" id="em" name="email" placeholder="Enter Email">
+            </div><br>
+            <div>
+                <label for="pws">Password:</label>
+                <input type="password" id="pws" name="password" placeholder="Enter Password" minlength="8" maxlength="12">
+            </div><br>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dateofbirth">
+            </div><br>
+            <div>
+                <label>Choose the Gender</label>
+                <input type="radio" name="gender" id="m" value="male"><label for="m">Male</label>
+                <input type="radio" name="gender" id="f" value="female"><label for="f">female</label>
+            </div><br>
+            <div>
+                <label for="mob">Mobile Number:</label>
+                <input type="number" id="mob" name="number" placeholder="Enter mob no" min="22" max="55">
+            </div><br>
+            <div>
+                <label>Languages Knownn:</label>
+                <input type="checkbox" name="languages" id="en" value="english">
+                <label for="en">English</label>
+                <input type="checkbox" name="languages" id="te" value="telugu">
+                <label for="te">Telugu</label>
+                <input type="checkbox" name="languages" id="hi" value="hindi">
+                <label for="hi">Hindi</label>
+            </div><br>
+            <div>
+                <label>Choose the Course:</label>
+                <select name="" id="">
+                    <option value="">Please Choose</option>
+                    <option value="BTech">BTech</option>
+                    <option value="Degree">Degree</option>
+                    <option value="MTech">MTech</option>
+                    <option value="B.Ed">B.Ed</option>
+                    <option value="MBA">MBA</option>
+                </select>
+            </div><br>
+            <div>
+                <label>Choose the subjects:</label>
+                <select name="" id="" multiple size="5">
+                    <option value="">Please Choose</option>
+                    <optgroup label="Common">
+                        <option value="Maths">Maths</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                    </optgroup>
+                    <optgroup label="Mech">
+                        <option value="ED">Engineering Drawing</option>
+                        <option value="FM">Fluid Mechanics</option>
+                    </optgroup>
+                    <optgroup label="EEE">
+                        <option value="VLSI">VLSI</option>
+                        <option value="DSP">DSP</option>
+                    </optgroup>
+                    <optgroup label="CSE">
+                        <option value="CN">computer Networks</option>
+                        <option value="DBMS">DBMS</option>
+                    </optgroup>
+                </select>
+            </div><br>
+            <div>
+                <label for="">Enter FeedBack:</label>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div><br>
+            <p>Note:All * fields are mandatory</p>
+            <div>
+                <button type="submit">submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+
+    </body>
+
+</html>

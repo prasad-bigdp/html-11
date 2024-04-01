@@ -7,12 +7,23 @@
        background-repeat:no-repeat;
        height: 100vh;
     color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-items: center;
 }
 
-#para1,#para2
+#para1
 {
     background-color: red;
     padding-bottom: 50px;
-    margin-top:50px;
     border: 1px solid yellow;
+}
+#para1
+{
+    height: 100px;
+    width: 100px;
+    
+
 }

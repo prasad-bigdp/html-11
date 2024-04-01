@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <h1>Form</h1>
+        <form action="main.py">
+            <div>
+                <label for="name">UR name:</label>
+                <input type="text" placeholder="Enter your name" name="un" id="name"/>
+            </div><br>
+            <div>
+                <label for="email">Enter Email:</label>
+                <input type="email" placeholder="Enter your email" name="email" id="eamil" />
+            </div><br>
+            <div>
+                <label for="Password">Password:</label>
+              <input type="password" name="pwd" placeholder="Enter password" id="Password">
+            </div><br>
+            <div>
+                <label for="age">Enter Age:</label>
+              <input type="number" placeholder="Enter your age" name="age" id="age">
+            </div><br>
+            <div>
+                <label for="dob">Enter your date of Birth:</label>
+                <input type="date" name="" id="dob">
+            </div><br>
+            <div>
+                <input type="file"><br>
+                <input type="color" name="" id=""><br>
+                <input type="datetime-local" name="" id=""><br>
+                <input type="hidden" name="company" value="wipro">
+                <input type="month" name="" id="">
+                <input type="week" name="" id="">
+                <input type="time" name="" id=""><br>
+               <input type="range" name="" id=""><br>
+               <input type="url" name="" id=""><br>
+               <input type="search" name="" id="">
+            </div><br>
+          <input type="submit" value="submit">
+          <input type="reset" value="reset">
+          <br><br><br>
+          <!-- checkbox are used for multiple selections  -->
+          <p>Skills:
+          </p>
+          <input type="checkbox" name="skills" value="java" id="java">
+          <label for="java">Java</label><br>
+            <input type="checkbox" name="skills" value="HTML" id="HTML">
+            <label for="HTML">HTML</label><br>
+            <input type="checkbox" name="skills" value="css" id="css">
+            <label for="css">CSS</label><br>
+
+            <!-- radio buttons are used for single selections -->
+
+            <h3>Who is the President of india now?</h3>
+            <div>
+                <input type="radio" name="pres" value="Ram Nath Govindh" id="o1">
+                <label for="o1">Ram Nath Govindh</label>
+            </div>
+            <div>
+                <input type="radio" name="pres" value="Drowpathi Mourmu" id="o2">
+                <label for="o2">Drowpathi Mourmu</label>
+            </div>
+            <div>
+                <input type="radio" name="pres" value="Narendra Modi"  id="o3">
+                <label for="o3">Narendra Modi</label>
+            </div>
+            <div>
+                <input type="radio" name="pres" value="Rahul gandhi" id="o4">
+                <label for="o4">Rahul gandhi</label>
+            </div>
+
+          <button>submit</button>
+        </form>
+    </body>
+
+</html>
