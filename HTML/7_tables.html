@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Features</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <!-- Creating a simple table -->
+    <h2>Simple Table</h2>
+    <table border="1">
+        <!-- The <table> tag creates the table container. -->
+        <!-- The "border" attribute specifies the border width (1 pixel in this case). -->
+        
+        <!-- The <tr> tag defines a table row. -->
+        <tr>
+            <!-- The <th> tag defines a table header cell. -->
+            <!-- Table headers are typically bold and centered by default. -->
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <!-- The <td> tag defines a table data cell. -->
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+
+    <!-- Adding table captions and column headers -->
+    <h2>Table Captions and Column Headers</h2>
+    <table border="1">
+        <caption>This is a Table Caption</caption>
+        <!-- The <caption> tag adds a caption or title to the table. -->
+
+        <thead>
+            <!-- The <thead> tag defines the table header group. -->
+            <tr>
+                <th scope="col">Column 1</th>
+                <!-- The "scope" attribute specifies the header's scope (column). -->
+                <th scope="col">Column 2</th>
+                <th scope="col">Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- The <tbody> tag defines the table body group. -->
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- The <tfoot> tag defines the table footer group. -->
+            <tr>
+                <td colspan="3">Total: 2 rows</td>
+                <!-- The "colspan" attribute spans cells across columns. -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Creating a table with merged cells -->
+    <h2>Merged Cells</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Header 1</th>
+            <!-- The "rowspan" attribute spans cells across rows. -->
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+    </table>
+</body>
+</html>

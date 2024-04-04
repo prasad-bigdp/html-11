@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Elements</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <!-- Form Element -->
+    <h2>Form Element</h2>
+    <form action="submit.php" method="post">
+        <!-- The <form> tag defines an HTML form. -->
+        <!-- "action" specifies the URL to which the form data is submitted. -->
+        <!-- "method" specifies the HTTP method used to send the data (e.g., POST or GET). -->
+
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <!-- The <label> tag is used to label form elements. -->
+        <!-- The "for" attribute links the label to the input element using its "id". -->
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+        <!-- The <input> tag is used for text input fields. -->
+        <!-- "type" specifies the input type (text in this case). -->
+        <!-- "name" is the name of the input field used when submitting the form. -->
+        <!-- "id" associates the input with its label. -->
+        <!-- "placeholder" provides a hint to the user about the expected input. -->
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+        <!-- The type "password" hides the user's input. -->
+
+        <!-- Radio Buttons -->
+        <fieldset>
+            <!-- The <fieldset> tag groups related form elements. -->
+            <legend>Gender:</legend>
+            <!-- The <legend> tag provides a title for the fieldset. -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" id="coding" name="interests[]" value="coding">
+            <label for="coding">Coding</label>
+            <input type="checkbox" id="gaming" name="interests[]" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" id="reading" name="interests[]" value="reading">
+            <label for="reading">Reading</label>
+        </fieldset>
+
+        <!-- Dropdown (Select) -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments"></textarea>
+        <!-- The <textarea> tag is used for multi-line text input. -->
+        <!-- "rows" and "cols" define the visible size of the textarea. -->
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+        <!-- The "submit" input type creates a button to submit the form. -->
+
+        <!-- Reset Button -->
+        <input type="reset" value="Reset">
+        <!-- The "reset" input type creates a button to reset the form fields to their initial values. -->
+    </form>
+</body>
+</html>
