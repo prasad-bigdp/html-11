@@ -1,0 +1,10 @@
+Fonts are the way of your characters representation in site.
+Fonts are mixed as a combination called font-family
+there are 5 font families existed
+
+Serif: Fonts with extra strokes at the end of each horizontal and vertical stroke
+Sans serif: A popular font family that conveys simplicity and minimalism
+Cursive: Fonts that mimic human handwriting by joining letters flowingly
+Fantasy: Decorative fonts that can make block of text more playful, such as in games, books, and presentations
+Monospace: Fonts with characters that are all the same width, making text look like a typewriter
+

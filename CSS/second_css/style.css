@@ -1,0 +1,14 @@
+
+body{
+    color:rgba(143, 162, 189, 0.6);
+    /* background: linear-gradient(to right,red,blue,green,yellow); */
+    /* background:radial-gradient(orange,tomato, green,orange,tomato, green,orange,tomato, green,orange,tomato, green,orange,tomato, green); */
+    height: 100vh;
+
+}
+p,h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight:bolder;
+}
