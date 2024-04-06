@@ -8,3 +8,27 @@ Cursive: Fonts that mimic human handwriting by joining letters flowingly
 Fantasy: Decorative fonts that can make block of text more playful, such as in games, books, and presentations
 Monospace: Fonts with characters that are all the same width, making text look like a typewriter
 
+In CSS, the font, text, background, and color properties are used to style text and its surrounding elements. Here's a brief explanation of each with examples:
+
+font: This property is used to set various font properties for text, such as font-family, font-size, font-weight, etc. For example:
+
+
+
+/* Set the font family, size, and weight */
+font: 16px Arial, sans-serif;
+text: This property is used to set text-related properties like text-align, text-decoration, text-transform, etc. For example:
+
+
+/* Align text to the center, underline it, and capitalize it */
+text: center underline capitalize;
+background: This property is used to set the background properties of an element, such as background-color, background-image, background-repeat, etc. For example:
+
+
+
+/* Set a red background color and a background image */
+background: red url('background.jpg') no-repeat;
+color: This property is used to set the text color. It can be set using color names, hexadecimal, RGB, or HSL values. For example:
+
+
+/* Set the text color to blue */
+color: blue;

@@ -1,0 +1,8 @@
+selectors is a way to select an element into css styles.
+you can select an element using tagname,classname,id  generally. there are several other ways to select an element.
+syntax:
+selectors
+{
+ property-name:value;
+}
+//tagname
