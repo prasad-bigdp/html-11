@@ -6,3 +6,54 @@ selectors
  property-name:value;
 }
 //tagname
+h1
+{
+     property-name:value;
+}
+//classname
+.classname
+{
+     property-name:value;
+}
+//idname
+#id
+{
+     property-name:value;
+}
+//descendent
+div p  ---> this means p tag inside family of div
+{
+     property-name:value;
+}
+div>p   ---> this applicable to p who is immediate child of div
+{
+     property-name:value;
+}
+//attribute/property
+input[type="text"]
+{
+     property-name:value;
+}
+/* pseudo selectors  -- all pseudo selectors starts with : */
+/*link pseudo selectors*/
+a:link---> anchor tag which is a link 
+a:active --->  anchor tag when you click
+a:visited --> anchor tag which is already opened
+/* input psudo selectors */
+input:required --> select inputs who have required flag
+input:optional --> select all inputs who don't have any required flag
+input:read-only ---> select all inputs who have readonly flag
+input:read-write ---> select all inputs who don't have any readonly flag
+input:disabled ---> select all inputs who have disabled flag
+input:enabled ---> select all inputs who don't have disabled flag
+input:hidden --> select hidden input elements
+
+div:empty --> select all divs who are empty
+
+div:nth-child(1) --> select div who is first child of their parent
+div:nth-of-type(1) --> select div who is first div for their parent
+div:nth-last-child(1) --> select div who is first child from last of their parent
+div:nth-lat-type-of-child(1) --> select div who is first child of div type from last of their parent
+*** you can always use "even" or "odd" for above selectors
+
+*----> root selector
