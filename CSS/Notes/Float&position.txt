@@ -1,0 +1,20 @@
+Float is used to keep an element floating right/left of UI.it will remove the element from the actual flow , so that the next element will fill the gap when the current element stays left/right.
+float:left/right
+Note: if the next don't want floating element to be its left/right , it can use "clear" like
+clear:left/right/both
+
+Position:
+Position Property is used to keep the element to a certain Position in the UI.
+usually there are 5 types of Positions. static,absolute,fixed,relative,sticky.
+
+By defalut all elements are static. Offsets like top,bottom,left,right not have any impact on static.
+
+Relative: it moves relative to its parent. for example an element with position-relative and left-100px will move 100px left side from its previos position in parent
+
+Absolute: In absolute element consider window as parent and if left 100px given , it moves 100px from window not parent.
+
+Fixed: fixed also consider window as parent same as absolute but it won't get affected by scrolling
+
+sticky: sticky is nothing but relative+fixed.
+
+Z-index: it is used when multiple element colllide in same space, the one with more z-index will appear over the ones with less z-index

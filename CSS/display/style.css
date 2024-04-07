@@ -1,0 +1,23 @@
+
+.main
+{
+    background-color: antiquewhite;
+    height: 500px;
+    width: 100%;
+    display: table;
+}
+.box
+{
+  height: 100px;
+  width: 48%;
+  background-color: red;
+  border: 1px solid black;
+}
+.second
+{
+    visibility: hidden;
+}
+.third
+{
+    display: block;
+}

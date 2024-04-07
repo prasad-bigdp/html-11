@@ -1,0 +1,100 @@
+.img
+{
+    float:right;
+}
+.main
+{
+width: 100%;
+background-color: aqua;
+height: 200px;
+}
+nav
+{
+    float: right;
+    position: sticky;
+    top: 0px;
+}
+li
+{
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+    background-color:antiquewhite;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 20px;
+}
+li:hover
+{
+    background-color: black;
+}
+
+a
+{
+   text-decoration: none;
+}
+a:hover{
+       color: white;
+}
+.left,.right
+{
+    width: 40%;
+    background-color: red;
+    height: 80px;
+    border: 2px solid black;
+}
+.left
+{
+    float: left;
+}
+.right
+{
+    float: right;
+}
+p{
+    clear: both;
+}
+
+body
+{
+    height: 100vh;
+    width: 100vw;
+}
+/* position will define exactly where an element stays. there are 5 positions like static,absolute,fixed,relative,sticky. The default position is static  */
+.positionDemo{
+    height: 500px;
+    width: 200px;
+    background-color: antiquewhite;
+ margin: 150px;
+}
+.box
+{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 10px;
+    color: white;
+}
+.first
+{
+   position:sticky;
+   top: 0px;
+   left: 150px;
+   z-index: 1;
+}
+.second
+{
+    background-color: green;
+    z-index: 100;
+}
+/* sticky-- relative+fixed */
+.chat
+{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
