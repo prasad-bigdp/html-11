@@ -1,0 +1,80 @@
+CSS units and the box model are fundamental concepts in web development, as they dictate how elements are sized and spaced within a webpage. Let's dive into each concept in detail:
+
+CSS Units:
+Absolute Units:
+
+Pixels (px): Represents a single dot on a screen. It is a fixed-size unit that does not change with the screen size or resolution.
+
+div {
+  width: 200px;
+  height: 100px;
+}
+Relative Units:
+
+Percentage (%): Relative to the parent element's size.
+
+div {
+  width: 50%;
+  height: 50%;
+}
+Viewport Width/Height (vw/vh): Relative to the viewport's width or height.
+
+div {
+  width: 50vw;
+  height: 50vh;
+}
+Font-relative Lengths (em, rem): Relative to the font size of the element or the root element (html).
+
+div {
+  font-size: 1.2em; /* 1.2 times the parent element's font size */
+  margin: 1rem; /* 1 times the root element's font size */
+}
+Viewport Percentage (vmin, vmax): Relative to the smaller or larger dimension of the viewport.
+
+div {
+  width: 50vmin; /* 50% of the viewport's smaller dimension */
+  height: 50vmax; /* 50% of the viewport's larger dimension */
+}
+Other Units:
+
+Centimeters (cm), Millimeters (mm), Inches (in): Absolute physical units.
+Points (pt), Picas (pc): Typically used in print.
+Box Model:
+The box model describes how elements are rendered on a webpage, consisting of content, padding, border, and margin.
+
+Content: The actual content of the element, such as text or images.
+
+
+div {
+  width: 200px;
+  height: 100px;
+}
+Padding: Space between the content and the border.
+
+
+div {
+  padding: 20px;
+}
+Border: A border surrounding the padding and content.
+
+
+div {
+  border: 2px solid black;
+}
+Margin: Space outside the border, separating this element from other elements.
+
+
+div {
+  margin: 10px;
+}
+Example:
+Let's say we have a <div> element with a width of 200px, padding of 20px, border of 2px, and margin of 10px. The total width of the box will be calculated as follows:
+
+Width Calculation:
+Total width = width + (left padding) + (right padding) + (left border) + (right border) + (left margin) + (right margin)
+Total width = 200px + (20px * 2) + (2px * 2) + (10px * 2)
+Total width = 200px + 40px + 4px + 20px
+Total width = 264px
+Similarly, the total height will be calculated considering the height, padding, border, and margin in a similar manner.
+
+To avoid this make width height constant, we use, box-sizing:border-box;
