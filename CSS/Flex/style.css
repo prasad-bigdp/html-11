@@ -1,0 +1,27 @@
+body{
+    box-sizing: border-box;
+}
+.main
+{
+    height: 300px;
+    width: 600px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction:row;
+   flex-wrap: wrap;
+    justify-content:space-around;/* center the elements in main axis*/
+    align-items: center;/* center the elements in cross axis */
+    justify-items: center;
+    align-content:center;
+}
+.box
+{
+    
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+.box1{
+    flex-basis: 200px;
+}
