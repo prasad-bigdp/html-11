@@ -8,7 +8,7 @@
     height:50px ;
    width: 50px;
    border-radius: 50%;
-  animation: fall-down1 5s steps(20) 1s infinite alternate;
+  animation: fall-down1 5s linear 1s infinite alternate;
   animation-fill-mode: both;
 }
 .box2{
@@ -18,28 +18,16 @@
     height:50px ;
    width: 50px;
    border-radius: 50%;
-  animation: fall-down2 5s ease-in 1s infinite alternate;
+  animation: fall-down1 5s ease-in 1s infinite alternate-reverse;
   animation-fill-mode: both;
-}
-@keyframes fall-down2 {
-    0%{
-      position: relative;
-      top: 90vh;
-    }
-    50%{
- position: relative;
-      top: 50%;
-      background-color: red;
-    }
-    100%{
- position: relative;
-      top: 0%;
-    }
 }
 @keyframes fall-down1 {
     0%{
       position: relative;
       top: 0px;
+    }
+    25%{
+      background-color: aqua;
     }
     50%{
         position: relative;

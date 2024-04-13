@@ -1,0 +1,43 @@
+:root{
+    --primary:blue;
+    --secondary:red;
+}
+body{
+    background-color:var(--secondary);
+    box-sizing: border-box;
+
+}
+.section1
+{
+    background: linear-gradient(white,var(--primary));
+    display: flex;
+
+}
+.para{
+  font-size: 18px;
+}
+img
+{
+    height: 300px;
+    width: 400px;
+    mix-blend-mode:darken;
+    transition: all 5s linear;
+}
+img:hover{
+    opacity: 0.6;
+}
+@media screen and (max-width:480px)
+{
+    .section1{
+       flex-direction: column-reverse;
+    }
+    .para{
+        font-size: 14px;
+    }
+}
+@media (min-width:481px) and (max-width:768px)
+{
+    .section1{
+        flex-direction: column-reverse;
+    }
+}
