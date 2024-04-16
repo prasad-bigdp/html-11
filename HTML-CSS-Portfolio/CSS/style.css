@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+:root {
+	--primary: #fb4d62;
+	--secondary: orange;
+	--font-size1: 24px;
+}
+body {
+	box-sizing: border-box;
+	font-family: Raleway, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+button {
+	background-color: var(--primary);
+	color: white;
+	padding: 20px 50px;
+	border-radius: 40px;
+	transition: all 1s ease;
+}
+button:hover {
+	background-color: var(--secondary);
+	color: black;
+}
+p {
+	font-size: var(--font-size1);
+	text-align: justify;
+}
+/* header css starts here*/
+
+header {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 100px;
+}
+
+header ul {
+	display: flex;
+	gap: 10px;
+}
+ul li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: var(--secondary);
+}
+
+section {
+	padding: 100px 100px;
+}
+/* header css ends here */
+/* banner css starts here*/
+#banner {
+	display: flex;
+	gap: 30px;
+    max-width: 1400px;
+	 /* animation: basic 2s ease infinite;  */
+   overflow-x: hidden;
+}
+.slides
+{
+    display: flex;
+    gap: 30px;
+    flex-basis: 1400px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-overflow: hidden;
+}
+@keyframes basic {
+	100% {
+		
+			transform: translateX(-1400px);
+	}
+}
+
+#banner p {
+	line-height: 1.5;
+}
+.buttons {
+	display: flex;
+	gap: 20px;
+	font-size: 20px;
+}
+.buttons:nth-child(2) {
+	background-color: white;
+}
+
+/* banner css ends here */
+/* about starts*/
+#about{
+    text-align: center;
+    
+}
+ h2{
+    font-size: 46px;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-shadow: 3px 5px var(--secondary);
+    text-align: center;
+}
+#about p{
+    text-align: center;
+}
+/* projects starts*/
+#projects
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+}
+.card
+{
+    box-shadow: 10px 10px black;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all 1s ease;
+
+}
+.card img
+{
+    width: 100%;
+
+}
+.card:hover{
+ box-shadow: 10px 10px var(--secondary);  
+ scale: 1.05; 
+}
+
+/* about ends*/
+
+
+
+
+
+/* mobile css*/
+
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+    #banner
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #banner .left{
+        width: 100%;
+    }
+    #banner img{
+     width:100%;
+     
+    }
+    .buttons{
+        justify-content: center;
+    }
+    #projects{
+        grid-template-columns: repeat(1,auto);
+    }
+}
