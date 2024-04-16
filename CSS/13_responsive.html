@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Design</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Default Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            /* Styles for screens with a maximum width of 768px (tablets) */
+
+            .container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Styles for screens with a maximum width of 480px (phones) */
+
+            .container {
+                padding: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        /* Additional Styling */
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- A container with content -->
+
+        <h1>Responsive Web Design</h1>
+        <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes.</p>
+    </div>
+</body>
+</html>

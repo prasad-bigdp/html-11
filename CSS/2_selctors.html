@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selector Types</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+        
+        /* Type Selector */
+        /* Selects all <p> elements */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        /* Selects elements with the class "highlight" */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        /* Selects the element with the ID "unique" */
+        #unique {
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        /* Selects <em> elements within <p> elements */
+        p em {
+            font-style: italic;
+        }
+
+        /* Child Selector */
+        /* Selects <span> elements that are direct children of <div> elements */
+        div > span {
+            font-size: 20px;
+        }
+
+        /* Adjacent Sibling Selector */
+        /* Selects the <h2> element that immediately follows an <h1> element */
+        h1 + h2 {
+            color: red;
+        }
+
+        /* Attribute Selector */
+        /* Selects <a> elements with the "target" attribute equal to "_blank" */
+        a[target="_blank"] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Selector Types</h1>
+    <p>This is a <em>paragraph</em> with some text.</p>
+    <p class="highlight">This is another paragraph with a class.</p>
+    <p>This is a <span>child element</span> within a paragraph.</p>
+    <div>
+        <span>This is a child element within a div.</span>
+    </div>
+    <h2>This is an adjacent sibling of an h1.</h2>
+    <p>This is a <a href="#" target="_blank">link</a> with a target attribute.</p>
+    <p id="unique">This is a unique paragraph with an ID.</p>
+</body>
+</html>

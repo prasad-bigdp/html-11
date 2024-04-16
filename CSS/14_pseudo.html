@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes and Pseudo-selectors</title>
+    <style>
+        /* Pseudo-classes */
+
+        /* :hover pseudo-class for mouse hover */
+        a:hover {
+            color: red;
+        }
+
+        /* :active pseudo-class for active state (click) */
+        button:active {
+            background-color: green;
+        }
+
+        /* :focus pseudo-class for focus state */
+        input:focus {
+            border: 2px solid blue;
+        }
+
+        /* :nth-child pseudo-class for even elements */
+        li:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        /* :nth-child pseudo-class for odd elements */
+        li:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        /* :not pseudo-class to select elements that are not links */
+        p:not(.special) {
+            font-weight: bold;
+        }
+
+        /* Pseudo-selectors */
+
+        /* ::before pseudo-element for inserting content before an element */
+        p::before {
+            content: "Before: ";
+            color: green;
+        }
+
+        /* ::after pseudo-element for inserting content after an element */
+        p::after {
+            content: " After";
+            color: blue;
+        }
+
+        /* ::first-line pseudo-element for styling the first line of text */
+        .first-line::first-line {
+            text-transform: uppercase;
+        }
+
+        /* ::first-letter pseudo-element for styling the first letter */
+        .first-letter::first-letter {
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-classes and Pseudo-selectors</h1>
+    <p>This is a <a href="#">link</a>.</p>
+    <button>Click me</button>
+    <input type="text" placeholder="Input field">
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <p class="special">This is a special paragraph.</p>
+    <p>This is a normal paragraph.</p>
+    <p>This is another normal paragraph.</p>
+    <p class="first-line">This is the first line of text.</p>
+    <p class="first-letter">This is a paragraph with a large initial letter.</p>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced CSS Features</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Custom Properties (CSS Variables) */
+        :root {
+            --primary-color: #007bff;
+        }
+
+        .custom-properties-box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* CSS Grid (Responsive Layouts) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS Flexbox (Flexible Layouts) */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            width: 30%;
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS Media Queries (Responsive Design) */
+        @media (max-width: 768px) {
+            .flex-item {
+                width: 100%;
+            }
+        }
+
+        /* CSS Transitions (Smooth Property Changes) */
+        .transition-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+
+        /* CSS Animations (Dynamic Effects) */
+        .animation-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(150px);
+                background-color: lightcoral;
+            }
+            100% {
+                transform: translateX(0);
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>Advanced CSS Features</h1>
+
+    <!-- Custom Properties (CSS Variables) -->
+    <h2>Custom Properties (CSS Variables)</h2>
+
+    <div class="custom-properties-box">
+        Custom Property
+    </div>
+    <!-- CSS Variables (custom properties) allow you to define and reuse values throughout your stylesheet. -->
+
+    <!-- CSS Grid (Responsive Layouts) -->
+    <h2>CSS Grid (Responsive Layouts)</h2>
+
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <!-- CSS Grid is used to create responsive layouts with flexible column widths. -->
+
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+    </div>
+
+    <!-- CSS Flexbox (Flexible Layouts) -->
+    <h2>CSS Flexbox (Flexible Layouts)</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+        <!-- CSS Flexbox is used to create flexible layouts with equal spacing between items. -->
+
+        <div class="flex-item">Flex Item 4</div>
+    </div>
+
+    <!-- CSS Media Queries (Responsive Design) -->
+    <h2>CSS Media Queries (Responsive Design)</h2>
+
+    <p>Resize the window to see the layout change.</p>
+    <!-- Media queries are used to apply different styles based on the screen size or device. -->
+
+    <!-- CSS Transitions (Smooth Property Changes) -->
+    <h2>CSS Transitions (Smooth Property Changes)</h2>
+
+    <p>Hover over the box to see the transition effect:</p>
+    <div class="transition-box"></div>
+    <!-- CSS transitions create smooth property changes when triggered by events like hover. -->
+
+    <!-- CSS Animations (Dynamic Effects) -->
+    <h2>CSS Animations (Dynamic Effects)</h2>
+
+    <p>Click on the box to see the animation:</p>
+    <div class="animation-box"></div>
+    <!-- CSS animations create dynamic and continuous effects using keyframes. -->
+</body>
+</html>

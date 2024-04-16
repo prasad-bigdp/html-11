@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transitions</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Transition Property */
+        .transition-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            transition-property: background-color; /* Specify the property to transition */
+            transition-duration: 1s; /* Transition duration (1 second) */
+            transition-timing-function: ease; /* Timing function (ease) */
+        }
+
+        /* Additional Styling */
+        p {
+            font-weight: bold;
+        }
+
+        /* Hover Effect */
+        .transition-box:hover {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Transitions</h1>
+
+    <!-- Transition Property -->
+    <h2>Transition Property</h2>
+
+    <p>Hover over the box to see the transition effect:</p>
+    <div class="transition-box"></div>
+    <!-- The transition effect is applied when the background-color property changes. -->
+
+    <!-- Transition Properties -->
+    <h2>Transition Properties</h2>
+
+    <div class="transition-box" style="transition-duration: 2s; transition-timing-function: ease-in-out;">
+        <p>Customized Transition</p>
+    </div>
+    <!-- You can customize the transition duration and timing function for individual elements. -->
+</body>
+</html>

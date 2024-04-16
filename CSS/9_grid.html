@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to CSS Grid</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Grid Container */
+        .grid-container {
+            display: grid; /* Create a grid container */
+            grid-template-columns: repeat(3, 1fr); /* Define 3 equal columns */
+            grid-template-rows: repeat(2, 100px); /* Define 2 rows, each 100px tall */
+            gap: 10px; /* Define the gap between grid items */
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* Grid Items */
+        .grid-item {
+            background-color: lightgreen;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Grid Template Areas */
+        .grid-container-areas {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            gap: 10px;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightpink;
+            padding: 10px;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: lightsalmon;
+            padding: 10px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: lightseagreen;
+            padding: 10px;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: lightsteelblue;
+            padding: 10px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        /* Additional Styling */
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>Introduction to CSS Grid</h1>
+
+    <!-- Grid Container -->
+    <h2>Grid Container</h2>
+
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <!-- Grid Template Areas -->
+    <h2>Grid Template Areas</h2>
+
+    <div class="grid-container-areas">
+        <div class="header">Header</div>
+        <div class="left">Left Sidebar</div>
+        <div class="main">Main Content</div>
+        <div class="right">Right Sidebar</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to CSS Flexbox</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Flex Container */
+        .flex-container {
+            display: flex; /* Create a flex container */
+            flex-direction: row; /* Arrange items horizontally (default) */
+            justify-content: space-between; /* Space items evenly along the main axis */
+            align-items: center; /* Center items along the cross axis */
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        /* Flex Items */
+        .flex-item {
+            flex: 1; /* Distribute available space evenly among items */
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* Additional Styling */
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>Introduction to CSS Flexbox</h1>
+
+    <!-- Flex Container -->
+    <h2>Flex Container</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>Item 1</p>
+            <!-- This is a flex item inside a flex container. -->
+        </div>
+
+        <div class="flex-item">
+            <p>Item 2</p>
+        </div>
+
+        <div class="flex-item">
+            <p>Item 3</p>
+        </div>
+    </div>
+
+    <!-- Flex Items -->
+    <h2>Flex Items</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>Item 1</p>
+        </div>
+
+        <div class="flex-item">
+            <p>Item 2</p>
+        </div>
+
+        <div class="flex-item">
+            <p>Item 3</p>
+        </div>
+    </div>
+</body>
+</html>

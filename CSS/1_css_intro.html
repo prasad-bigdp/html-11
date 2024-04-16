@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Introduction to CSS</title>
+    <!-- The <title> tag sets the title of the web page displayed in the browser's tab. -->
+    
+    <!-- Internal CSS -->
+    <style>
+        /* This is an internal CSS block. It's defined within the <style> tags in the <head> section. */
+        /* It applies styles to all <p> elements with the class "intro". */
+        p.intro {
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- This <link> tag links to an external CSS file named "styles.css." -->
+
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+    
+    <!-- Inline CSS -->
+    <h1 style="color: green;">Welcome to Our Website</h1>
+    <!-- The "style" attribute allows for inline CSS. -->
+    <!-- It sets the color of the <h1> element's text to green. -->
+
+    <p class="intro">This is an example of an internal CSS style.</p>
+    <!-- The "class" attribute assigns the class "intro" to this <p> element. -->
+    <!-- It will be styled according to the internal CSS defined in the <style> block above. -->
+
+    <p style="font-size: 14px; font-weight: bold;">This is an example of inline CSS.</p>
+    <!-- The "style" attribute allows for inline CSS. -->
+    <!-- It sets the font size to 14 pixels and the font weight to bold for this <p> element. -->
+</body>
+</html>

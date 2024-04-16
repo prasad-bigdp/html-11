@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Float and Clear</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Float Property */
+        .float-left {
+            float: left;
+            width: 150px;
+            height: 150px;
+            background-color: lightblue;
+            margin-right: 20px;
+        }
+
+        /* Clear Property */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Additional Styling */
+        p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Float and Clear</h1>
+
+    <!-- Float Property -->
+    <h2>Float Property</h2>
+
+    <div class="float-left">
+        <p>This is a floated element.</p>
+        <!-- The float property moves the element to the left or right, allowing content to flow around it. -->
+    </div>
+
+    <p>
+        This is some text that flows around the floated element. 
+        <!-- Content flows around the floated element, making it appear inline with the text. -->
+    </p>
+
+    <!-- Clear Property -->
+    <h2>Clear Property</h2>
+
+    <div class="float-left">
+        <p>This is another floated element.</p>
+        <!-- Another floated element is added. -->
+    </div>
+
+    <div class="clearfix"></div>
+    <!-- The clearfix class is used to clear the floated elements. -->
+
+    <p>
+        This text is not affected by the floated elements due to the clear property.
+        <!-- The clear property ensures that content below the floated elements is not influenced by them. -->
+    </p>
+</body>
+</html>

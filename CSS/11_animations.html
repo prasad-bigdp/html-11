@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Animations</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Animation Properties */
+        .animation-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            animation-name: slide; /* Name of the animation defined with keyframes */
+            animation-duration: 2s; /* Duration of the animation (2 seconds) */
+            animation-timing-function: ease; /* Timing function (ease) */
+            animation-delay: 1s; /* Delay before the animation starts (1 second) */
+            animation-iteration-count: infinite; /* Number of times the animation repeats (infinite) */
+            animation-direction: alternate; /* Direction of the animation (alternate) */
+        }
+
+        /* Keyframes */
+        @keyframes slide {
+            0% {
+                transform: translateX(0); /* Initial position */
+            }
+            50% {
+                transform: translateX(150px); /* Midpoint position */
+                background-color: lightcoral; /* Change background color */
+            }
+            100% {
+                transform: translateX(0); /* Final position */
+                background-color: lightblue; /* Reset background color */
+            }
+        }
+
+        /* Additional Styling */
+        p {
+            font-weight: bold;
+        }
+
+        /* Transition Property */
+        .transition-box {
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Animations</h1>
+
+    <!-- Animation Properties -->
+    <h2>Animation Properties</h2>
+
+    <p>Click on the box to see the animation:</p>
+    <div class="animation-box"></div>
+    <!-- The animation is applied to the box using keyframes. -->
+
+    <!-- Keyframes -->
+    <h2>Keyframes</h2>
+
+    <div class="animation-box"></div>
+    <!-- The animation uses keyframes to define different stages of the animation. -->
+
+    <!-- Transition Property -->
+    <h2>Transition Property</h2>
+
+    <p>Hover over the box to see the transition effect:</p>
+    <div class="transition-box"></div>
+    <!-- A separate box demonstrates a transition effect for comparison. -->
+</body>
+</html>

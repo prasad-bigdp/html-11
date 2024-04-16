@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Static Positioning */
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            width: 200px;
+            height: 100px;
+        }
+
+        /* Relative Positioning */
+        .relative-container {
+            position: relative;
+            background-color: lightgreen;
+            width: 300px;
+            height: 150px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightcoral;
+            width: 100px;
+            height: 50px;
+        }
+
+        /* Absolute Positioning */
+        .absolute-container {
+            position: relative; /* Important! This sets the container as the reference point for absolute positioning. */
+            background-color: lightpink;
+            width: 400px;
+            height: 200px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightsalmon;
+            width: 150px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Positioning</h1>
+
+    <!-- Static Positioning -->
+    <h2>Static Positioning</h2>
+
+    <div class="static-box">
+        <p>This is a static element.</p>
+        <!-- Static positioning is the default behavior. Elements are placed in the normal flow of the document. -->
+    </div>
+
+    <!-- Relative Positioning -->
+    <h2>Relative Positioning</h2>
+
+    <div class="relative-container">
+        <p>This is a relative container.</p>
+        <!-- Relative positioning allows elements to be shifted relative to their normal position in the flow. -->
+        <div class="relative-box">
+            <p>This is a relative element.</p>
+        </div>
+    </div>
+
+    <!-- Absolute Positioning -->
+    <h2>Absolute Positioning</h2>
+
+    <div class="absolute-container">
+        <p>This is a relative container.</p>
+        <!-- Relative positioning is applied to the container to serve as the reference point for absolute positioning. -->
+        <div class="absolute-box">
+            <p>This is an absolute element.</p>
+            <!-- Absolute positioning removes the element from the normal flow and positions it relative to the nearest positioned ancestor. -->
+        </div>
+    </div>
+</body>
+</html>

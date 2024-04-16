@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Property</title>
+    <style>
+        /* This is an internal CSS block for demonstration purposes. */
+
+        /* Block Display */
+        .block {
+            display: block;
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin-bottom: 20px;
+        }
+
+        /* Inline Display */
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        /* Inline-Block Display */
+        .inline-block {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: lightcoral;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <h1>CSS Display Property</h1>
+
+    <!-- Block Display -->
+    <h2>Block Display</h2>
+
+    <div class="block">
+        <p>This is a block-level element.</p>
+        <!-- Block-level elements start on a new line and take up the full width available. -->
+    </div>
+
+    <div class="block">
+        <p>Another block-level element.</p>
+    </div>
+
+    <!-- Inline Display -->
+    <h2>Inline Display</h2>
+
+    <span class="inline">This is an inline element.</span>
+    <!-- Inline elements flow within the content and only take up as much width as necessary. -->
+
+    <span class="inline">Another inline element.</span>
+
+    <!-- Inline-Block Display -->
+    <h2>Inline-Block Display</h2>
+
+    <span class="inline-block"></span>
+    <span class="inline-block"></span>
+    <!-- Inline-block elements are similar to inline elements but can have specified dimensions. -->
+
+    <span class="inline-block"></span>
+</body>
+</html>
