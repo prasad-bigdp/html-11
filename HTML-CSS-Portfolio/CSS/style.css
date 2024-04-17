@@ -3,12 +3,17 @@
 	--primary: #fb4d62;
 	--secondary: orange;
 	--font-size1: 24px;
+		scroll-behavior: smooth;
+	scrollbar-color: var(--primary);
+	scrollbar-highlight-color: aqua;
 }
 body {
 	box-sizing: border-box;
 	font-family: Raleway, sans-serif;
 	padding: 0px;
 	margin: 0px;
+	width: 100vw;
+
 }
 button {
 	background-color: var(--primary);
@@ -32,12 +37,13 @@ header {
 	color: white;
 	display: flex;
 	justify-content: space-between;
-	padding: 0px 100px;
+	position: fixed;
+	width: 100vw;
 }
 
 header ul {
 	display: flex;
-	gap: 10px;
+	gap: 20px;
 }
 ul li {
 	list-style-type: none;
@@ -45,6 +51,7 @@ ul li {
 a {
 	text-decoration: none;
 	color: white;
+	font-size: 24px;
 }
 a:hover {
 	color: var(--secondary);
@@ -132,8 +139,41 @@ section {
 }
 
 /* about ends*/
-
-
+/* contact*/
+#contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.contact{
+	box-shadow: 5px 5px black;
+	padding: 50px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.contact input,.contact select
+{
+	width: 100%;
+     height: 50px;	
+	 border-radius: 20px;
+}
+input::placeholder{
+	
+	font-size: 16px;
+}
+/* contact ends*/
+/* footer */
+ footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+ }
+/* footer */
 
 
 
@@ -162,4 +202,16 @@ section {
     #projects{
         grid-template-columns: repeat(1,auto);
     }
+}
+@media (max-width: 480px) {
+	header{
+		position: static;
+	}
+	section{
+		padding: 0;
+	}
+	header ul{
+		flex-direction: column;
+
+	};
 }
