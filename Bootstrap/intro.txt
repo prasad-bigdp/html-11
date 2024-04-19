@@ -1,0 +1,28 @@
+Bootstrap is a component library ( a pre written code for a specific purpose).
+Bootstrap provides responsiveness.
+official website: https://getbootstrap.com/
+
+How to start/setup bootstrap:
+
+goto offical website --> docs --> get started --> copy cdn links and paste in your html head
+
+check whether bootstrap working or not by giving class names btn btn-primary.
+
+colors of bootstrap:
+bootstrap uses 8 colors
+primary(blue),secondary(grey),success(green),danger(red),warning(yellow),info(skyblue),light(white),dark(black).
+You can also customer by giving your own colour.
+
+bootstrap works by grid layout of 12 columns
+each line is class "row"
+each col can be made by "col" or "col-number".. max value is 12.
+
+Responsive ness:
+breakpoints of bootstrap-->
+Breakpoint	Class infix	       Dimensions
+Extra small	        None	    <576px
+Small	             sm	          ≥576px
+Medium	            md	          ≥768px
+Large	            lg	         ≥992px
+Extra large	       xl	          ≥1200px
+Extra extra large	xxl	          ≥1400px

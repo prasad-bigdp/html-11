@@ -1,0 +1,33 @@
+BAsics of Internet
+blogging(hashnode)
+git and github
+HTML
+---------
+Layout
+headings,paragraphs
+a and img
+block vs inline
+lists
+tables
+forms , validation
+semantic elements
+media
+HTML5( need to be done with JS)
+
+CSS
+--------
+ Basics
+ selectors
+ box model
+ text,bg,colors,fonts
+ position
+ float
+ display
+ flex
+ grid
+ transition and translate ,
+ animations
+ media queries
+
+ Libraries: animate css
+
