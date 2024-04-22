@@ -30,4 +30,13 @@ CSS
  media queries
 
  Libraries: animate css
+Build Project.
 
+Bootstrap:
+Bootstrap Layout,
+colors,
+breakpoints
+UTILITIEs
+COMPONENTS
+
+Build Project

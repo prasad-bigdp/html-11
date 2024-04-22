@@ -1,0 +1,60 @@
+JAVASCRIPT is called the language of Web. it is the programming language for web development.
+JS is used for functioning of the website.
+JS is actually maintained by Ecma script.we are currently in ES13 but popular is ES6.
+JS files used extension .JS
+you can add internal JAVASCRIPT or external JS.
+
+For Internal JS ==> you can write JS inside script tag. 
+
+Java and JS are not related at all. 1994==>Livescript==>javascript bcz java is popular.
+
+<script>
+//internal
+</script>
+
+//external
+<script src="./file></script>
+
+1. how to write comments in JS?
+Comments are used for better understanding and readability. There are two types pf comments in JS.
+1. single line -- 
+// comment 
+2.multi line --
+
+2. what are essential to know for a programming language?
+1. variable
+2.data types
+3.operators
+4. controls
+5.loops
+
+3. what is variable? how to declare one?
+
+variables are used to store the data. In JS, there are three ways to declare a variable
+1. var variable-name;
+2. let variable-name;
+3.const variable-name;
+
+3. what are the basics window methods?
+There are three baic window methods.
+1. alert() -- used to print some info as an alert.
+2.propmpt() -- used to get input fro user
+3.confirm()
+/* comment  */
+
+4. what are the different data types in JS?
+Data type defines what type the data belongs. There are primirily two types. 
+  1. primitive data types:
+  primitive data types are used to define any data.They are
+     number, string, boolean , null , undefined
+  2. non- primitive data types: They use primitive data type. These are also called reference data types.
+     arrays,objects,functions
+
+ Basically JS used duck typing or dynamic data typing means you can't fix one data type for one variable.    
+
+ To know the data type of a variable, you can use operator "typeof()"
+
+ 5. Explain 'number' data type.
+  any numerical values in Js , it automatically assigns number data type. Even decimals are also considered as number data type .
+
+  There are some pre - defined methods for numbers
