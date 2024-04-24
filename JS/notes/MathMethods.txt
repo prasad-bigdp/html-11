@@ -1,0 +1,16 @@
+Math Methods are default methods used for specific mathematical operations.
+some of the Math Methods are:
+1. Math.sqrt(num)---> returns the square root of num
+2. Math.cbrt(num)---> returns the cube root of num
+3. Math.pow(x,y)---> returns the result of x power y
+4. Math.log(x)----> retutns logarithemic value of x
+5. Math.exp(x)----> retuns result of e power x
+6. Math.ceil(x)---> give the largest near possible number in decimal number line.
+7.Math.floor(x) ---> give the smallest near possible number in decimal number line
+8.Math.round(num)----> will round figure the value of num
+9.Math.random()---> will generate random value from 0.0-1.0
+10.Math.max(x,y) and Math.min(x,y) --> will generate maximum and minimum values from given values
+11.Math.abs(-x) ---> will remove the negitivity and print results
+
+/* write a js code to input three numbers a,b,c and output roots by quadratic formula */
+/* input: a:1 , b: -5, c:6 ==> answers will be 2 and 3 */

@@ -8,6 +8,7 @@ For Internal JS ==> you can write JS inside script tag.
 
 Java and JS are not related at all. 1994==>Livescript==>javascript bcz java is popular.
 
+
 <script>
 //internal
 </script>
@@ -20,6 +21,8 @@ Comments are used for better understanding and readability. There are two types 
 1. single line -- 
 // comment 
 2.multi line --
+/* .......................
+...................*/
 
 2. what are essential to know for a programming language?
 1. variable
@@ -34,12 +37,12 @@ variables are used to store the data. In JS, there are three ways to declare a v
 1. var variable-name;
 2. let variable-name;
 3.const variable-name;
-
+ let,const are ES6 features
 3. what are the basics window methods?
 There are three baic window methods.
 1. alert() -- used to print some info as an alert.
-2.propmpt() -- used to get input fro user
-3.confirm()
+2.propmpt() -- used to get input from user but it will always take as a string
+3.confirm() -- it will ask you to confirm yes or no?
 /* comment  */
 
 4. what are the different data types in JS?
@@ -58,3 +61,11 @@ Data type defines what type the data belongs. There are primirily two types.
   any numerical values in Js , it automatically assigns number data type. Even decimals are also considered as number data type .
 
   There are some pre - defined methods for numbers
+    1. var num=25.369;
+    num.toFixed(2)---> it will round figure number into 2 decimal points.
+    2. var num=26.3698
+    num.toPrecision(3) ---> it will round figure number into only 3 digits from starting
+    3.var num=25;
+    num.toString(2) --> it will convert the given number into respected base number--> num into binary
+
+

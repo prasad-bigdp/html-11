@@ -1,0 +1,83 @@
+Primitve data types works with value.
+var a=20;
+var b=a;
+a and b will have same values
+
+number, strings, boolean,undefined,null
+boolean: boolean is used to store or return values true or false. true also means 1 and false 0;
+
+undefined and null:
+undefined: not updated till now
+null: value is not there...
+null vs undefined.
+
+operators: 
+a+b==> a,b are operands, + is operator , a+b is operation
+
+There are several operator types:
+1. Arithematic Operators:
+These operators are used to perform arithematic operations
++,- ,* ,/, %, **
+eg: 10/3-->3.33
+10%3--->1
+2**3 --> 2 power 3 --->8
+
+2. Relational operators:
+These operators are used to represent comparison
+>, < ,>=, <=, ==, ===, !=, !==
+
+==  vs ===: == is used to compare two values but it will consider the data types. so 20=="20" will be true,
+=== also compares data type so 20==="20" will be false
+
+3. Assignment Operators:
+ These operators are used to assign some values
+ +=,-=,*=,/=,%=,=
+ a+=2===> a= a+2
+ a-=2 ===> a= a-2;
+ these are also called short hand methods
+
+4. unary operators:
+unary operator need only one operands
++ is unary operator to convert string to number
+++ is an increment operator to increase the value by 1
+-- is an decrement operator to decrease the value by 1
+
+pre increment(++a===> incremnet+ update) , post increment (a++===>update+ increment)
+
+a=55;
+a++ + --a + ++a + a--;
+55 + 55 + 56 + 56
+
+x=20,y=30;
+x++ + --y + ++y + --x
+20+29+30+20
+
+5. ternary operator or conditional operator:
+ternary operator will take three operands
+ (condition) ? statemnet : statemnet ;
+a=20
+ var k = (a>25) ? 5 : 2 ;
+
+ /* eligible to vote or not */
+ (age > 18) ? console.log("eligible") :  console.log("not eligible") ;
+
+ 6.Logical Operators: 
+ These operators are used to apply the conditions logically
+ raj is good and raj works well ==> T and T ==> T
+ raj is good or raj works well ==>  F and F ==> F
+ Today rain will not come 
+&&, ||, !
+a=5;
+(a>3) && (a <5) ==> F
+(a<5) || (a>3) ==> T
+!(a>5)===> T
+
+
+
+
+
+
+
+
+
+

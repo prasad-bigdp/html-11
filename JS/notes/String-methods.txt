@@ -1,0 +1,58 @@
+In Js strings are immutable
+Strings are used for alphanumerics.Strings can be represnted in Js by three ways
+1.single quotes
+var s='raj';
+2.double quotes
+var s="raj"
+There is no difference for single quote or double. based on requirement we will use and better maintain consistency
+3.template literal:
+it takes the values without breaking flow.
+var x=25
+var str=` the value is ${x}`
+
+
+Methods:
+str.length ---> return the length of the string ( no.of characters)
+Eg: " this is js cource" -->18
+
+str.toUpperCase()---> will convert str into UpperCase
+str.toLowerCase()----> will convert str into Lowercase
+Eg:"Prasad".toUpperCase()-----> PRASAD,
+"PRASAD".toLowerCase()----->prasad.
+
+str.slice('start','end')---> will return piece of str from start(included) index to end(excluded) index
+"prasad".slice(2,5) --->asa
+
+str.substr(start) or str.substr(start,length):
+---> will return from start to end of string or from start to length
+"prasad".substr(1)---> rasad
+"prasad".substr(1,3)---> ras
+
+str.endsWith('x') or str.startsWith('x')
+----> check whether str is ending with x or not / str is starting with x or not ---> return true or false
+"prasad".endsWith('ad') --->true
+
+str.split('deliiter') ---> used to split the characters based on delimitor
+"prasad".split('')---> ["p","r","a","s","a","d"]
+
+str.join('delimiter')---> joins the array of values based on delimiter
+["pra","sad"].join(' ')---> "pra sad"
+
+str.indexOf('char')---> returns the index of specific character
+"prasad".indexOf('a') --> 2---> always returns first occurence
+for last occurence---> lastIndexOf
+
+str.charAt(index)---> returns the character at specified index.
+"prasad".charAt(2)---> a
+
+trim-----> to remove spaces from first and last
+
+
+
+
+
+
+
+
+
+
