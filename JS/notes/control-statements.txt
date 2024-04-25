@@ -1,0 +1,77 @@
+Control statements controls flow of document using some conditions.
+usually they return true or false.
+
+simple if:
+only if statement will be there
+if(condition)
+{
+    //code
+}
+code will be executed only if condition is true.
+
+if---else
+you can give alternative incase condition fails
+if(condition)
+{
+    //code1
+}
+else
+{
+    //code2
+}
+code1 will be executed only if condition is true , else code 2 will be executed
+
+if-else-if
+you can checck multiple conditions by if-else -if ladder
+if(condition)
+ code1
+else if(condition2)
+ code2
+else
+code3
+
+if conditon is true code1 will be executed else it will checck condition2 and code 2 will be executed if it is true else code3 will be executed automatically
+
+nested-if:
+you can keep one if statement isside another if statement. 
+if(condition)
+{
+    if(condition2)
+    {
+        code2
+    }
+}
+
+======================================
+                Switch
+======================================
+
+switch works in the place nested if .
+switch contains cases and default. if switch expression matches any case and that case will be executed , if it doesn't match , then default will be executed.
+
+Every switch statemnet will have break else code of next case will also be execute until program finds break or switch is over
+
+This error is called "Fall-through " error
+x=1
+switch(x)
+{
+    case 0:console.log("something1");break;
+    case 1:console.log("something2");break;
+    case 2:console.log("something3");break;
+    default:console.log("default");break;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

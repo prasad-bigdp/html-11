@@ -1,0 +1,10 @@
+loops or iteration statements:
+they run until the condition fails. each run is one iteration.
+
+They are primirily two loops existed. 
+1. entry control loops:
+at entry only the condition will be checked
+Eg: while, for
+2. exit control loops:
+condition will be checked after execution
+Eg: do while

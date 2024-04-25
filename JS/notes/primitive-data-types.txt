@@ -10,6 +10,8 @@ undefined and null:
 undefined: not updated till now
 null: value is not there...
 null vs undefined.
+var a=null;
+var a=unefined;
 
 operators: 
 a+b==> a,b are operands, + is operator , a+b is operation
