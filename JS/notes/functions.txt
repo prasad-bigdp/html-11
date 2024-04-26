@@ -1,0 +1,41 @@
+In JS , functions are called as first class citizens.
+
+functions are understand by 3 things 
+ function declaration
+ function definition
+ function call
+
+ The main uses of functions are reusability, split the code.
+
+ function function-name(parametrs)-->declaration
+ {
+    //code --> body/def
+ }
+ function-name(arguments) -->calling
+
+ function incre(a)
+ {
+    console.log(++a)
+ }
+ incre(5)
+
+Every function also be stored as a variable by default with same name
+console.log(incre)--> it will print whole function
+
+you can also give name like function expression
+
+var xyz= function incre()
+{
+    console.log("something")
+}
+console.log(xyz)--> will print whole function.
+ you can even remove name and call the function as anonymous function
+
+ callback functions:
+ writing or taking one function as aparameter to another function is called call back function
+
+the function which is taking is called Higher order function
+
+the function which is in parameter is called callback function
+
+// check JS function in internet

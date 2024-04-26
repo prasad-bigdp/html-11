@@ -8,3 +8,24 @@ Eg: while, for
 2. exit control loops:
 condition will be checked after execution
 Eg: do while
+
+initialization; i=0
+while(condition) i<10
+{
+    //code i
+    updation i++
+}
+
+
+initalization
+do{
+    code
+    updation
+}while(condition)
+
+//for loops
+//standard for
+for(initialization;condition;updation)
+{
+    //code
+}
