@@ -1,0 +1,22 @@
+DOM means Document Object Model. complete your html will be stored by browser inside one object called "document" . it will store in a tree structure called "DOM tree".
+
+To manipulate DOM using JS.
+1. selectors
+2. events
+3. manipulators
+
+1. selectors:
+There are different ways to select a dom element in JS.
+
+getElementsByTagName('p')----> it will select all paragraph elements.
+
+getElementsByClassName('classname')----> it will select all elements of that particular class 
+
+getElementById('idname') --> select only one element with that id 
+
+**** tagname and classname results a HTML Collection, array
+
+similarly you can also use
+document.querySelector('query') --> select the first element that satisfies the following query..
+
+to select all elements you can use document.querySelectorAll('query')

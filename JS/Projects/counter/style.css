@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#counter{
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+#counter p{
+    font-size: 48px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
