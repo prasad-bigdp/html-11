@@ -20,3 +20,21 @@ similarly you can also use
 document.querySelector('query') --> select the first element that satisfies the following query..
 
 to select all elements you can use document.querySelectorAll('query')
+
+2. To manipulate or to access elements data, we have 4 ways
+  a. textContent ---> it returns the textual content inside the selected element
+  b. innerText ----> it returns the textual content inside the selected element but it will consider CSS
+  inner Text cannot access hidden values but textContent can.
+  c. innerHTML: ----> it return HTML code and it even executes it.
+  it can be dangerous if you use it for input elements
+  d. value---> you can use value to access value from an input element
+
+  3. styles and classes
+
+  you can change css using style for selected element.
+
+  document.getElementById('id').style.property="value"
+
+  you can add , remove or toggle classes to any selected elements
+
+  document.getElementById('id').classList.add('classname')/.remove('classname')/.toggle('classname')
