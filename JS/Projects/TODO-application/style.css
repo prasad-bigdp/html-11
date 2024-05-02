@@ -1,0 +1,9 @@
+#data{
+    display: flex;
+    gap: 20px;
+}
+.card{
+    box-shadow: 5px 5px black;
+    background-color: antiquewhite;
+    padding: 10px;
+}

@@ -1,0 +1,7 @@
+You can also add or delete HTML elements using DOM elements
+
+document.createElement('elemenetname')-- you can create any elemnet you want
+
+element.appendChild(element2)--> used to append element2 inside element
+
+to add all elemnts in a order , you can also use append.
