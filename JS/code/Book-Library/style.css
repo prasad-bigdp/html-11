@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 1px 1px aqua;
+}
+#library{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.book{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px black;
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 2s ease;
+}
+.book:hover{
+    transform: scale(1.05);
+        box-shadow: 5px 5px aqua;
+
+}
+.book img{
+    height: 200px;
+    width:200px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+a:hover{
+    color: aqua;
+}
