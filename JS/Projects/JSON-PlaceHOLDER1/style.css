@@ -1,0 +1,9 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.todo{
+    padding:20px;
+    border: 2px solid green;
+}

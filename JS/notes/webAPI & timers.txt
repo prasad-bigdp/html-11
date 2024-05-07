@@ -1,5 +1,8 @@
 Web API's are the functions provides by Browser. 
 document
 console
-Timers
+Timers: There are two timers basically browser uses. 
+setTimeout(fn,time)==> it works only once after the time is over. usually the time will be in milliseconds. 1s=1000ms,
+setInterval(fn,time)==> it works every time after the specific time is over like interavlas.
+
 fetch

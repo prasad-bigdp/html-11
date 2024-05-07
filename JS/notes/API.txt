@@ -1,0 +1,5 @@
+API(APllication Prograamin Interface):
+for example,swiggy,zomato,rapido uses maps, how do they implement?
+these people pay to google maps and get their api , then they change according to design.
+we encounter OTP's , they use 3rd party otp system.
+In olden Times, we used to use XmlHttpRequest for API's, but modern browsers implemented their own functionality for API called fetch
