@@ -1,0 +1,21 @@
+In js, events are handled in two ways
+1. Event handlers : they are declared in  html like onclick,onmouseover,onkeypress etc..,
+2. event listeners: they are declared or triggered within js lik add eventlistener or removeeventlistener etc..,
+
+ there are mainly 3 types of events
+ 1. mouse events: click,dblclick,mouseover,mouseout, etc..,
+ 2. keyboard events: keypress,keyup,keydown etc..,
+ 3. window events: resize,onload, etc..,
+
+
+ How events listeners or events in js propagated?
+
+ Event propagation:
+
+ when nested events are there, if innermost child got an event triigeered same event will be trigeered to parent and continues until body. this is called bubbling and it use bottom-up approach
+
+ There is another approach named top down approach. this approach also callled as capturing, make third argument in eventlistener true
+
+ Event Delegation: technique to make events run smooothly when no.of nested events are more.
+
+ when multiple children are there, instead of writing functions foreach child, you can implement directly for parent because bubbling will there by default
