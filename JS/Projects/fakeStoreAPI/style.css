@@ -1,0 +1,14 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+.product{
+    border:1px solid black;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px;
+}
+.product img{
+    height: 100px;
+    width: 200px;
+}

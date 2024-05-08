@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input{
+    display: flex;
+    gap: 15px;
+}
+input{
+    height: 50px;
+    width: 60vw;
+    border-radius: 20px;
+    font-size: 40px;
+}
+button{
+    height: 50px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+  padding: 10px 20px;
+}
+#results{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+.movie{
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 5px 5px black;
+    height: 400px;
+}
+.movie img{
+    height: 200px;
+}
