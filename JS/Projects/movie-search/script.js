@@ -4,9 +4,13 @@ const button = document.getElementById('btn')
 input.addEventListener('input', fetchData)
 function fetchData ()
 {
-    fetch(`https://omdbapi.com/?s=${input.value}&apikey=c5b1cbfc`)
+    fetch(`https://omdbapi.com/?s=${input.value}&apikey=c5b1cbfc`) //fetch returns promise
         .then(function (res) { return res.json() })
-        .then(function (data) { displayData(data.Search) })
+        .then(function (data)
+        {
+            console.log(data);
+            displayData(data.Search)
+        })
     .catch(function(err){console.log(err)})
 }
 function displayData (data)

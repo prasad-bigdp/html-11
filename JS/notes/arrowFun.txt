@@ -1,0 +1,18 @@
+function sum(a,b)
+{
+    console.log("sum");
+    console.log(a+b)
+}
+//
+let sum = (a,b) =>{ 
+    console.log("sum");
+    console.log(a+b)
+}
+//Arrow fun are modern way of write normal functions
+.They have implicit return
+
+function display()
+{
+    return x;
+}
+let display= ()=>x;
