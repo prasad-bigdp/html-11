@@ -1,0 +1,47 @@
+<!--
+    Basically,elements that can be dragged are called data/drag sources,
+    elements that accepts the dragged items are called data/drop targets,
+    data trasfer-process
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Dos</title>
+<style>
+
+</style>
+</head>
+<body>
+<div class="task-list" id="pending-tasks" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <h2>Pending tasks</h2>
+    <div class="task" draggable="true" ondragstart="drag(event)" id="task1">Task1</div>
+    <div class="task" draggable="true" ondragstart="drag(event)" id="task2">Task2</div>
+    <div class="task" draggable="true" ondragstart="drag(event)" id="task3">Task3</div>
+</div>    
+<div class="task-list" id="completed-tasks" ondrop="drop(event)" ondragover="allowDrop(event)">
+<h2>Completed Tasks</h2>
+</div>
+
+
+<script>
+    function allowDrop(event)
+    {
+        event.preventDefault();
+    }
+    function drag(event)
+    {
+        event.dataTransfer.setData('text',event.target.id);
+    }
+    function drop(event)
+    {
+                event.preventDefault();
+                const data= event.dataTransfer.getData('text');
+                const task= document.getElementById(data)
+                task.classList.add('completed');
+                event.target.appendChild(task)                 
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Event Listeners in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Types of Event Listeners in JavaScript</h1>
+
+        <button id="myButton">Click Me!</button>
+
+        <script>
+            // Get a reference to the button element
+            var button = document.getElementById("myButton");
+
+            // 1. Click Event Listener
+            button.addEventListener("click", function () {
+                alert("Click Event: Button Clicked!");
+            });
+
+            // 2. Mouseover Event Listener
+            button.addEventListener("mouseover", function () {
+                button.style.backgroundColor = "lightblue";
+                console.log("Mouseover Event: Mouse is over the button.");
+            });
+
+            // 3. Mouseout Event Listener
+            button.addEventListener("mouseout", function () {
+                button.style.backgroundColor = "";
+                console.log("Mouseout Event: Mouse left the button.");
+            });
+
+            // 4. Keydown Event Listener
+            document.addEventListener("keydown", function (event) {
+                console.log("Keydown Event: Key pressed - " + event.key);
+            });
+
+            // 5. Keyup Event Listener
+            document.addEventListener("keyup", function (event) {
+                console.log("Keyup Event: Key released - " + event.key);
+            });
+
+            // 6. Submit Event Listener (Form Submission)
+            var form = document.querySelector("form");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the form from submitting
+                console.log("Submit Event: Form submitted.");
+            });
+        </script>
+    </div>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

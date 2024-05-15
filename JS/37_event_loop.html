@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Event Loop in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Understanding the Event Loop in JavaScript</h1>
+
+        <p>The event loop is a fundamental concept in JavaScript that allows it to handle asynchronous operations efficiently.</p>
+
+        <h2>Example: The Call Stack and the Callback Queue</h2>
+        <script>
+             function simulateAsyncOperation2 ()
+                {
+                    setTimeout(function ()
+                    {
+                        console.log("Async operation 2 complete.");
+                    }, 2000);
+                }
+            // Function to simulate a time-consuming operation
+            function simulateAsyncOperation() {
+                setTimeout(function () {
+                    console.log("Async operation 1 complete.");
+                }, 1000);
+            }
+
+            // Function to simulate the event loop
+            function runEventLoop() {
+                console.log("Start of event loop.");
+
+                // Call a function that simulates an asynchronous operation
+                simulateAsyncOperation();
+                simulateAsyncOperation2()
+
+                console.log("End of event loop.");
+            }
+
+            // Run the event loop
+            runEventLoop();
+        </script>
+    </div>
+</body>
+</html>

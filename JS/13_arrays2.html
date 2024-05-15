@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Array Methods</h1>
+
+        <h2>Common Array Methods</h2>
+        <script>
+            // Creating an array
+            var fruits = ["apple", "banana", "cherry"];
+
+            // Length of the array
+            var arrayLength = fruits.length;
+
+            // Joining array elements into a string
+            var joinedFruits = fruits.join(", ");
+
+            // Adding elements to the end of the array
+            fruits.push("date", "elderberry");
+
+            // Removing the last element from the array
+            var removedElement = fruits.pop();
+
+            // Adding elements to the beginning of the array
+            fruits.unshift("apricot", "avocado");
+
+            // Removing the first element from the array
+            var removedElement2 = fruits.shift();
+
+            // Finding the index of an element
+            var indexOfCherry = fruits.indexOf("cherry");
+
+            // Reversing the order of elements
+            var reversedFruits = fruits.slice().reverse();
+
+            // Sorting elements alphabetically
+            var sortedFruits = fruits.slice().sort();
+
+            // Slicing a portion of the array
+            var slicedFruits = fruits.slice(1, 4);
+
+            // Splicing elements into the array
+            fruits.splice(2, 0, "grape", "kiwi");
+
+            // Removing elements by splicing
+            var removedElements = fruits.splice(1, 2);
+
+            // Displaying array information
+            document.write("Array: " + fruits + "<br>");
+            document.write("Array Length: " + arrayLength + "<br>");
+            document.write("Joined Array: " + joinedFruits + "<br>");
+            document.write("Removed Element (pop): " + removedElement + "<br>");
+            document.write("Removed Element (shift): " + removedElement2 + "<br>");
+            document.write("Index of 'cherry': " + indexOfCherry + "<br>");
+            document.write("Reversed Array: " + reversedFruits + "<br>");
+            document.write("Sorted Array: " + sortedFruits + "<br>");
+            document.write("Sliced Array: " + slicedFruits + "<br>");
+            document.write("Spliced Array: " + fruits + "<br>");
+            document.write("Removed Elements (splice): " + removedElements + "<br>");
+        </script>
+    </div>
+</body>
+</html>

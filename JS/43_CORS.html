@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross-Origin Resource Sharing (CORS) in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Cross-Origin Resource Sharing (CORS) in JavaScript</h1>
+
+        <p>CORS is a security feature that controls cross-origin HTTP requests in web applications.</p>
+
+        <h2>Example: Handling CORS Requests</h2>
+        <button id="fetchDataButton">Fetch Data</button>
+        <div id="dataContainer"></div>
+        <script>
+            // Function to make a CORS request to an external API
+            function fetchDataFromAPI() {
+                // Define the API endpoint URL
+                const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
+
+                // Use the fetch API to make a GET request
+                fetch(apiUrl)
+                    .then(function (response) {
+                        // Check if the response status is OK (200)
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        // Parse the JSON response
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        // Handle the data
+                        displayData(data);
+                    })
+                    .catch(function (error) {
+                        // Handle errors
+                        displayError(error);
+                    });
+            }
+
+            // Function to display data in the HTML container
+            function displayData(data) {
+                const dataContainer = document.getElementById("dataContainer");
+                dataContainer.innerHTML = `<strong>Title:</strong> ${data.title}<br><strong>Body:</strong> ${data.body}`;
+            }
+
+            // Function to display error messages in the HTML container
+            function displayError(error) {
+                const dataContainer = document.getElementById("dataContainer");
+                dataContainer.innerHTML = `<strong>Error:</strong> ${error.message}`;
+            }
+
+            // Attach an event listener to the button
+            const fetchDataButton = document.getElementById("fetchDataButton");
+            fetchDataButton.addEventListener("click", fetchDataFromAPI);
+        </script>
+    </div>
+</body>
+</html>

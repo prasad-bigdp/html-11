@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Array Methods in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Functional Array Methods in JavaScript</h1>
+
+        <h2>Example 1: Using the map() Method</h2>
+        <script>
+            // Original array
+            const numbers = [1, 2, 3, 4, 5];
+
+            // Using the map() method to create a new array with squared values
+            const squaredNumbers = numbers.map(function (num) {
+                return num * num;
+            });
+
+            console.log("Original Numbers:", numbers);
+            console.log("Squared Numbers:", squaredNumbers);
+        </script>
+
+        <h2>Example 2: Using the filter() Method</h2>
+        <script>
+            // Original array of numbers
+            const scores = [85, 92, 78, 90, 88];
+
+            // Using the filter() method to find passing scores (>= 90)
+            const passingScores = scores.filter(function (score) {
+                return score >= 90;
+            });
+
+            console.log("Original Scores:", scores);
+            console.log("Passing Scores:", passingScores);
+        </script>
+
+        <h2>Example 3: Using the reduce() Method</h2>
+        <script>
+            // Original array of numbers
+            const values = [1, 2, 3, 4, 5];
+
+            // Using the reduce() method to calculate the sum of values
+            const sum = values.reduce(function (accumulator, currentValue) {
+                return accumulator + currentValue;
+            }, 0);
+
+            console.log("Original Values:", values);
+            console.log("Sum:", sum);
+        </script>
+    </div>
+</body>
+</html>

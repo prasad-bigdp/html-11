@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chaining in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Promise Chaining in JavaScript</h1>
+
+        <p>Promise chaining allows you to execute asynchronous operations sequentially.</p>
+        <h2>Example: Promise Chaining</h2>
+        <script>
+            // Simulate an asynchronous operation that returns a Promise
+            function fetchUserData() {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        const userData = { id: 1, username: "jsmith" };
+                        resolve(userData);
+                    }, 1000);
+                });
+            }
+
+            // Simulate another asynchronous operation that takes user data and returns a Promise
+            function fetchUserPosts(userData) {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        const userPosts = ["Post 1", "Post 2", "Post 3"];
+                        resolve(userPosts);
+                    }, 1000);
+                });
+            }
+
+            // Chain promises to fetch user data and user posts
+            fetchUserData()
+                .then(function (userData) {
+                    console.log("User Data:", userData);
+                    return fetchUserPosts(userData);
+                })
+                .then(function (userPosts) {
+                    console.log("User Posts:", userPosts);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        </script>
+    </div>
+</body>
+</html>

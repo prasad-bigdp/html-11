@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Methods in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Mathematical Methods in JavaScript</h1>
+
+        <h2>Math Constants</h2>
+        <script>
+            // Mathematical constants
+            var pi = Math.PI; // Value of pi (π)
+            var euler = Math.E; // Euler's number (e)
+
+            // Display constants
+            document.write("Value of Pi (π): " + pi + "<br>");
+            document.write("Euler's Number (e): " + euler + "<br>");
+        </script>
+
+        <h2>Basic Math Methods</h2>
+        <script>
+            // Basic math methods
+            var num1 = 5;
+            var num2 = 3;
+
+            var sum = Math.add(num1, num2); // Addition
+            var difference = Math.subtract(num1, num2); // Subtraction
+            var product = Math.multiply(num1, num2); // Multiplication
+            var quotient = Math.divide(num1, num2); // Division
+            var power = Math.pow(num1, num2); // Exponentiation
+            var squareRoot = Math.sqrt(num1); // Square root
+
+            // Display results
+            document.write("Sum: " + sum + "<br>");
+            document.write("Difference: " + difference + "<br>");
+            document.write("Product: " + product + "<br>");
+            document.write("Quotient: " + quotient + "<br>");
+            document.write("Power: " + power + "<br>");
+            document.write("Square Root: " + squareRoot + "<br>");
+        </script>
+
+        <h2>Trigonometric Methods</h2>
+        <script>
+            // Trigonometric methods (in radians)
+            var angle = Math.PI / 6; // 30 degrees in radians
+
+            var sine = Math.sin(angle);
+            var cosine = Math.cos(angle);
+            var tangent = Math.tan(angle);
+
+            // Display trigonometric results
+            document.write("Sine (sin): " + sine + "<br>");
+            document.write("Cosine (cos): " + cosine + "<br>");
+            document.write("Tangent (tan): " + tangent + "<br>");
+        </script>
+
+        <h2>Rounding Methods</h2>
+        <script>
+            // Rounding methods
+            var num = 3.75;
+
+            var roundedUp = Math.ceil(num); // Round up to the nearest integer
+            var roundedDown = Math.floor(num); // Round down to the nearest integer
+            var rounded = Math.round(num); // Round to the nearest integer
+
+            // Display rounded results
+            document.write("Rounded Up: " + roundedUp + "<br>");
+            document.write("Rounded Down: " + roundedDown + "<br>");
+            document.write("Rounded: " + rounded + "<br>");
+        </script>
+    </div>
+</body>
+</html>

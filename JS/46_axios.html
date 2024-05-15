@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    function makeRequest()
+    {
+         axios.get('http://jsonplaceholder.typicode.com/posts/1')
+         .then(response=>{
+            document.getElementById('output').textContent=JSON.stringify(response,null,2);
+            console.log(response)
+         })
+
+    }
+    makeRequest()
+</script>
+</head>
+<body>
+    <!-- Axios is a 3rd party library for making http requests -->
+<h1>HTTP request using Axios</h1>
+<button onclick="makeRequest()">click</button>
+<div id="output"></div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes and Inheritance in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Classes and Inheritance in JavaScript</h1>
+
+        <h2>Example 1: Creating a Class</h2>
+        <script>
+            // Creating a class using the class keyword
+            class Animal {
+                // Constructor method to initialize object properties
+                constructor(name, species) {
+                    this.name = name;
+                    this.species = species;
+                }
+
+                // Method to make the animal sound
+                makeSound() {
+                    console.log(`${this.name} makes a sound.`);
+                }
+            }
+
+            // Creating an instance of the Animal class
+            const lion = new Animal("Leo", "Lion");
+            lion.makeSound();
+        </script>
+
+        <h2>Example 2: Inheritance (Extending a Class)</h2>
+        <script>
+            // Creating a subclass (Child class) using extends
+            class Bird extends Animal {
+                // Constructor method for the Bird class
+                constructor(name, species, wingspan) {
+                    // Call the parent class constructor using super()
+                    super(name, species);
+                    this.wingspan = wingspan;
+                }
+
+                // Method to make a bird sound
+                makeSound() {
+                    console.log(`${this.name} chirps.`);
+                }
+
+                // Additional method for birds
+                fly() {
+                    console.log(`${this.name} can fly with a wingspan of ${this.wingspan} cm.`);
+                }
+            }
+
+            // Creating an instance of the Bird class
+            const sparrow = new Bird("Sparry", "Sparrow", 15);
+            sparrow.makeSound();
+            sparrow.fly();
+        </script>
+    </div>
+</body>
+</html>

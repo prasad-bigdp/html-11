@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Callbacks in JavaScript</h1>
+
+        <h2>Example 1: Basic Callback</h2>
+        <script>
+            // Example of a simple callback function
+            function greet(name, callback) {
+                var message = "Hello, " + name + "!";
+                callback(message);
+            }
+
+            function displayGreeting(message) {
+                console.log(message);
+            }
+
+            greet("Alice", displayGreeting);
+        </script>
+
+        <h2>Example 2: Asynchronous Callback</h2>
+        <script>
+            // Asynchronous operation with a callback
+            function fetchData(callback) {
+                setTimeout(function () {
+                    var data = "Data fetched asynchronously.";
+                    callback(data);
+                }, 1500);
+            }
+
+            function processData(data) {
+                console.log("Data Processing: " + data);
+            }
+
+            fetchData(processData);
+        </script>
+
+        <h2>Example 3: Callback Hell (Nested Callbacks)</h2>
+        <script>
+            // Nested callbacks (Callback Hell)
+            function step1(callback) {
+                setTimeout(function () {
+                    console.log("Step 1 completed");
+                    callback();
+                }, 1000);
+            }
+
+            function step2(callback) {
+                setTimeout(function () {
+                    console.log("Step 2 completed");
+                    callback();
+                }, 1500);
+            }
+
+            function step3() {
+                setTimeout(function () {
+                    console.log("Step 3 completed");
+                }, 500);
+            }
+//pyramid of doom or call back hell
+            step1(function () {
+                step2(function () {
+                    step3();
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

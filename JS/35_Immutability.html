@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immutability in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Immutability in JavaScript</h1>
+
+        <h2>Example 1: Immutable Data with Arrays</h2>
+        <script>
+            // Creating an original array
+            const originalArray = [1, 2, 3, 4, 5];
+
+            // Creating a new array with an added element (immutability)
+            const newArray = [...originalArray, 6];
+
+            // Modifying the original array (mutability)
+            originalArray.push(7);
+
+            console.log("Original Array:", originalArray);
+            console.log("New Array:", newArray);
+        </script>
+
+        <h2>Example 2: Immutable Data with Objects</h2>
+        <script>
+            // Creating an original object
+            const originalObject = { name: "Alice", age: 30 };
+
+            // Creating a new object with an added property (immutability)
+            const newObject = { ...originalObject, city: "New York" };
+
+            // Modifying the original object (mutability)
+            originalObject.job = "Engineer";
+
+            console.log("Original Object:", originalObject);
+            console.log("New Object:", newObject);
+        </script>
+    </div>
+</body>
+</html>

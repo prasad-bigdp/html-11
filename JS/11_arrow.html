@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Arrow Functions</h1>
+
+        <h2>Basic Arrow Function</h2>
+        <script>
+            // Basic arrow function
+            const greet = (name) => {
+                return "Hello, " + name + "!";
+            };
+
+            // Call the arrow function
+            const greeting = greet("Alice");
+            document.write("Greeting: " + greeting + "<br>");
+        </script>
+
+        <h2>Arrow Function with One Parameter</h2>
+        <script>
+            // Arrow function with one parameter (no parentheses needed)
+            const square = x => x * x;
+
+            // Call the arrow function
+            const result = square(5);
+            document.write("Square: " + result + "<br>");
+        </script>
+
+        <h2>Arrow Function with No Parameters</h2>
+        <script>
+            // Arrow function with no parameters (empty parentheses)
+            const getCurrentYear = () => {
+                const year = new Date().getFullYear();
+                return year;
+            };
+
+            // Call the arrow function
+            const currentYear = getCurrentYear();
+            document.write("Current Year: " + currentYear + "<br>");
+        </script>
+
+        <h2>Arrow Function in a Callback</h2>
+        <script>
+            // Arrow function in a callback
+            const numbers = [1, 2, 3, 4, 5];
+
+            const doubledNumbers = numbers.map(number => number * 2);
+
+            // Display the result
+            document.write("Doubled Numbers: " + doubledNumbers.join(", ") + "<br>");
+        </script>
+    </div>
+</body>
+</html>

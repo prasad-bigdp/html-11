@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>DOM Manipulation in JavaScript</h1>
+
+        <h2>Selecting DOM Elements</h2>
+        <script>
+            // Selecting elements by ID
+            var elementById = document.getElementById("myElement");
+
+            // Selecting elements by class name
+            var elementsByClass = document.getElementsByClassName("myClass");
+
+            // Selecting elements by tag name
+            var elementsByTag = document.getElementsByTagName("p");
+
+            // Selecting elements using CSS selectors
+            var elementsBySelector = document.querySelectorAll(".container p");
+
+            // Display the selected elements
+            document.write("Element by ID: " + elementById.textContent + "<br>");
+            document.write("Elements by Class: " + elementsByClass.length + " found.<br>");
+            document.write("Elements by Tag: " + elementsByTag.length + " found.<br>");
+            document.write("Elements by Selector: " + elementsBySelector.length + " found.<br>");
+        </script>
+
+        <h2>Creating and Modifying DOM Elements</h2>
+        <script>
+            // Creating a new element
+            var newElement = document.createElement("div");
+            newElement.textContent = "Newly created element";
+
+            // Appending the new element to an existing element
+            var container = document.querySelector(".container");
+            container.appendChild(newElement);
+
+            // Modifying element content and attributes
+            var existingElement = document.getElementById("existingElement");
+            existingElement.textContent = "Modified content";
+            existingElement.setAttribute("data-custom", "12345");
+
+            // Removing an element
+            var elementToRemove = document.getElementById("removeMe");
+            elementToRemove.parentNode.removeChild(elementToRemove);
+        </script>
+    </div>
+
+    <!-- Elements for DOM selection -->
+    <div id="myElement">Element by ID</div>
+    <p class="myClass">Element by Class</p>
+    <p class="myClass">Another Element by Class</p>
+    <p>Element by Tag</p>
+    <p>Another Element by Tag</p>
+    <p class="container">Element by Selector</p>
+
+    <!-- Elements for DOM modification -->
+    <div id="existingElement">Existing Element</div>
+    <div id="removeMe">Remove Me</div>
+</body>
+</html>

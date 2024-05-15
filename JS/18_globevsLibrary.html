@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global vs. Local Scope in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Global vs. Local Scope in JavaScript</h1>
+
+        <h2>Global Scope</h2>
+        <script>
+            // Global scope variable
+            var globalVar = "I'm in the global scope";
+
+            // Display global scope variable
+            document.write("Global Variable: " + globalVar + "<br>");
+
+            // Function with local scope
+            function printLocal() {
+                // Local scope variable
+                var localVar = "I'm in the local scope";
+
+                // Accessing both local and global variables
+                document.write("Local Variable: " + localVar + "<br>");
+                document.write("Global Variable (inside function): " + globalVar + "<br>");
+            }
+
+            // Call the function
+            printLocal();
+
+            // Attempting to access the local variable from the global scope (will result in an error)
+            try {
+                document.write("Local Variable (outside function): " + localVar + "<br>");
+            } catch (error) {
+                document.write("Error: " + error.message + "<br>");
+            }
+        </script>
+
+        <h2>Block Scope (Introduced in ES6)</h2>
+        <script>
+            // Using "let" to create block-scoped variables
+            if (true) {
+                let blockVar = "I'm in a block scope";
+                document.write("Block Variable: " + blockVar + "<br>");
+            }
+
+            // Attempting to access the block-scoped variable from outside the block (will result in an error)
+            try {
+                document.write("Block Variable (outside block): " + blockVar + "<br>");
+            } catch (error) {
+                document.write("Error: " + error.message + "<br>");
+            }
+            /*Global Scope:
+
+We declare a variable globalVar in the global scope, making it accessible throughout the entire script.
+Inside a function (printLocal), we declare a variable localVar in the local scope. This variable is only accessible within the function.
+Accessing Variables:
+
+We demonstrate how to access both global and local variables inside and outside the function.
+Block Scope (Introduced in ES6):
+
+We use the let keyword to create block-scoped variables within an if block.
+We show that block-scoped variables are not accessible outside of their block.
+Comments are provided to explain the concepts of global scope, local scope, and block scope in JavaScript.*/
+        </script>
+    </div>
+</body>
+</html>

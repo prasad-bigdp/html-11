@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables (var, let, const)</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Variables (var, let, const)</h1>
+
+        <h2>Using var</h2>
+        <script>
+            // Using var to declare a variable
+            var age = 30;
+
+            // var allows redeclaration in the same scope
+            var age = 40;
+
+            // Output the value
+            document.write("Age (var): " + age);
+        </script>
+
+        <h2>Using let</h2>
+        <script>
+            // Using let to declare a variable
+            let name = "John";
+
+            // let does not allow redeclaration in the same scope
+            // let name = "Alice"; // Uncommenting this line will cause an error
+
+            // Output the value
+            document.write("Name (let): " + name);
+        </script>
+
+        <h2>Using const</h2>
+        <script>
+            // Using const to declare a constant
+            const pi = 3.14159;
+
+            // const does not allow reassignment
+            // pi = 3.14; // Uncommenting this line will cause an error
+
+            // Output the value
+            document.write("PI (const): " + pi);
+        </script>
+    </div>
+    <div>
+    <h2>Block Scope</h2>
+        <script>
+            // Using let to declare a variable with block scope
+            if (true) {
+                let blockVar = "I'm in a block!";
+                document.write("Inside block: " + blockVar + "<br>");
+            }
+
+            // Trying to access blockVar outside the block scope
+            // This will cause an error
+            // document.write("Outside block: " + blockVar);
+        </script>
+
+        <h2>Function Scope</h2>
+        <script>
+            // Using var to declare a variable with function scope
+            function exampleFunction() {
+                var functionVar = "I'm in a function!";
+                document.write("Inside function: " + functionVar + "<br>");
+            }
+
+            exampleFunction();
+
+            // Accessing functionVar outside the function scope
+            document.write("Outside function: " + functionVar);
+        </script>
+    </div>
+     
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Operators</h1>
+
+        <h2>Arithmetic Operators</h2>
+        <script>
+            // Arithmetic operators perform mathematical calculations
+            var x = 10;
+            var y = 5;
+
+            var addition = x + y;
+            var subtraction = x - y;
+            var multiplication = x * y;
+            var division = x / y;
+            var modulus = x % y;
+
+            document.write("Addition: " + addition + "<br>");
+            document.write("Subtraction: " + subtraction + "<br>");
+            document.write("Multiplication: " + multiplication + "<br>");
+            document.write("Division: " + division + "<br>");
+            document.write("Modulus: " + modulus + "<br>");
+        </script>
+
+        <h2>Assignment Operators</h2>
+        <script>
+            // Assignment operators assign values to variables
+            var a = 10;
+
+            a += 5; // Equivalent to a = a + 5;
+            document.write("Assignment (+=): " + a + "<br>");
+
+            a -= 3; // Equivalent to a = a - 3;
+            document.write("Assignment (-=): " + a + "<br>");
+        </script>
+
+        <h2>Comparison Operators</h2>
+        <script>
+            // Comparison operators compare values and return a boolean result
+            var num1 = 10;
+            var num2 = 5;
+
+            var isEqual = num1 == num2;
+            var isNotEqual = num1 != num2;
+            var isGreaterThan = num1 > num2;
+            var isLessThan = num1 < num2;
+
+            document.write("Equal (==): " + isEqual + "<br>");
+            document.write("Not Equal (!=): " + isNotEqual + "<br>");
+            document.write("Greater Than (>): " + isGreaterThan + "<br>");
+            document.write("Less Than (<): " + isLessThan + "<br>");
+        </script>
+
+        <h2>Logical Operators</h2>
+        <script>
+            // Logical operators perform logical operations and return a boolean result
+            var isTrue = true;
+            var isFalse = false;
+
+            var andResult = isTrue && isFalse;
+            var orResult = isTrue || isFalse;
+            var notResult = !isTrue;
+
+            document.write("Logical AND (&&): " + andResult + "<br>");
+            document.write("Logical OR (||): " + orResult + "<br>");
+            document.write("Logical NOT (!): " + notResult + "<br>");
+        </script>
+
+        <h2>Ternary Operator</h2>
+        <script>
+            // Ternary operator is a shorthand way to write conditional statements
+            var age = 20;
+            var canVote = (age >= 18) ? "Yes" : "No";
+
+            document.write("Can Vote: " + canVote + "<br>");
+        </script>
+    </div>
+</body>
+</html>

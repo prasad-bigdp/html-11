@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and Map Data Structures in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Set and Map Data Structures in JavaScript</h1>
+
+        <h2>Example 1: Using a Set</h2>
+        <script>
+            // Creating a Set
+            const colors = new Set();
+
+            // Adding elements to the Set
+            colors.add("red");
+            colors.add("green");
+            colors.add("blue");
+            colors.add("red"); // Duplicate values are ignored
+
+            // Checking if an element exists in the Set
+            const hasGreen = colors.has("green");
+
+            // Getting the size of the Set
+            const numberOfColors = colors.size;
+
+            // Deleting an element from the Set
+            colors.delete("blue");
+
+            console.log("Colors Set:", colors);
+            console.log("Has Green:", hasGreen);
+            console.log("Number of Colors:", numberOfColors);
+        </script>
+
+        <h2>Example 2: Using a Map</h2>
+        <script>
+            // Creating a Map
+            const person = new Map();
+
+            // Adding key-value pairs to the Map
+            person.set("name", "Alice");
+            person.set("age", 30);
+            person.set("city", "New York");
+
+            // Getting values by key
+            const name = person.get("name");
+            const age = person.get("age");
+
+            // Checking if a key exists in the Map
+            const hasCity = person.has("city");
+
+            // Deleting a key-value pair from the Map
+            person.delete("age");
+
+            console.log("Person Map:", person);
+            console.log("Name:", name);
+            console.log("Has City:", hasCity);
+        </script>
+    </div>
+</body>
+</html>

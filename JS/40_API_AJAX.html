@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding APIs and AJAX in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content
+        
+        AJAX- Asynchrounous javascript and XML-->
+
+        <h1>Understanding APIs and AJAX in JavaScript</h1>
+
+        <p>APIs provide a way for applications to communicate and interact with external services or data sources.</p>
+
+        <h2>Example: Making an AJAX Request</h2>
+        <button id="loadDataButton">Load Data</button>
+        <div id="dataContainer"></div>
+        <script>
+            // Function to make an AJAX request
+            function fetchDataFromAPI() {
+                // Create a new XMLHttpRequest object
+                const xhr = new XMLHttpRequest();
+
+                // Configure the request (GET request to a JSON API)
+                xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+                // Set up a callback function to handle the response
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        const response = JSON.parse(xhr.responseText);
+                        const dataContainer = document.getElementById("dataContainer");
+                        dataContainer.innerHTML = `<strong>Title:</strong> ${response.title}<br><strong>Body:</strong> ${response.body}`;
+                    } else {
+                        console.error("Error:", xhr.statusText);
+                    }
+                };
+
+                // Handle network errors
+                xhr.onerror = function () {
+                    console.error("Network error occurred.");
+                };
+
+                // Send the request
+                xhr.send();
+            }
+
+            // Attach an event listener to the button
+            const loadDataButton = document.getElementById("loadDataButton");
+            loadDataButton.addEventListener("click", fetchDataFromAPI);
+        </script>
+    </div>
+</body>
+</html>

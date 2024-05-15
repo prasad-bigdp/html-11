@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Ternary Operator</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Ternary Operator</h1>
+
+        <h2>Basic Usage</h2>
+        <script>
+            // Basic usage of the ternary operator
+            var age = 20;
+            var canVote = (age >= 18) ? "Yes" : "No";
+            document.write("Can Vote: " + canVote + "<br>");
+        </script>
+
+        <h2>Assigning Values</h2>
+        <script>
+            // Assigning values based on conditions
+            var score = 85;
+            var grade = (score >= 90) ? "A" : (score >= 80) ? "B" : "C";
+            document.write("Grade: " + grade + "<br>");
+        </script>
+
+        <h2>Logging Messages</h2>
+        <script>
+            // Logging messages conditionally
+            var isAuthenticated = true;
+            isAuthenticated ? console.log("User is authenticated.") : console.log("User is not authenticated.");
+        </script>
+
+        <h2>Conditional Rendering (HTML)</h2>
+        <script>
+            // Conditional rendering of HTML content
+            var isAdmin = false;
+            var message = isAdmin ? "<h3>Welcome, Admin!</h3>" : "<h3>Welcome, User!</h3>";
+            document.write(message);
+        </script>
+    </div>
+</body>
+</html>

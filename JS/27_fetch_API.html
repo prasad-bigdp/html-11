@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API for HTTP Requests</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Fetch API for HTTP Requests</h1>
+
+        <h2>Example 1: Making a GET Request</h2>
+        <script>
+            // Making a GET request using the Fetch API
+            fetch("https://jsonplaceholder.typicode.com/posts/1")
+                .then(function (response) {
+                    // Check if the response status is OK (200)
+                    if (!response.ok) {
+                        throw new Error("HTTP error! Status: " + response.status);
+                    }
+                    // Parse the response as JSON
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log("Data received: ", data);
+                })
+                .catch(function (error) {
+                    console.error("Error: " + error);
+                });
+        </script>
+
+        <h2>Example 2: Making a POST Request</h2>
+        <script>
+            // Making a POST request using the Fetch API
+            const postData = {
+                userId: 1,
+                id: 101,
+                title: "Sample Post",
+                body: "This is a sample post body.",
+            };
+
+            fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(postData),
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("HTTP error! Status: " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+                    console.log("Post created: ", data);
+                })
+                .catch(function (error) {
+                    console.error("Error: " + error);
+                });
+        </script>
+    </div>
+</body>
+</html>

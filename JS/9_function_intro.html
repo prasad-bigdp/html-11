@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Declaration vs. Expression</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Function Declaration vs. Expression</h1>
+
+        <h2>Function Declaration</h2>
+        <script>
+            // Function Declaration
+            function greetDeclaration(name) {
+                return "Hello, " + name + "!";
+            }
+
+            // Call the function
+            var messageDeclaration = greetDeclaration("John");
+            document.write("Message (Declaration): " + messageDeclaration + "<br>");
+        </script>
+
+        <h2>Function Expression</h2>
+        <script>
+            // Function Expression
+            var greetExpression = function (name) {
+                return "Hello, " + name + "!";
+            };
+
+            // Call the function
+            var messageExpression = greetExpression("Alice");
+            document.write("Message (Expression): " + messageExpression + "<br>");
+        </script>
+
+        <h2>Key Differences</h2>
+        <script>
+            // Key differences between Declaration and Expression
+            // Function Declaration is hoisted, while Function Expression is not.
+            // You can call a Function Declaration before it's defined.
+            // Function Expression can be assigned to variables and passed as arguments.
+
+            // Call Function Declaration before it's defined
+            var messageBeforeDeclaration = greetBeforeDeclaration("Sarah");
+            document.write("Message (Before Declaration): " + messageBeforeDeclaration + "<br>");
+
+            // Function Declaration
+            function greetBeforeDeclaration(name) {
+                return "Hello, " + name + "!";
+            }
+
+            // Assign Function Expression to a variable
+            var greetAsVariable = function (name) {
+                return "Hello, " + name + "!";
+            };
+
+            // Call Function Expression assigned to a variable
+            var messageAsVariable = greetAsVariable("Bob");
+            document.write("Message (As Variable): " + messageAsVariable + "<br>");
+
+            // Pass Function Expression as an argument
+            function sayHello(greetingFunction, person) {
+                var message = greetingFunction(person);
+                return message;
+            }
+
+            var messageWithExpression = sayHello(greetAsVariable, "Eve");
+            document.write("Message (With Expression): " + messageWithExpression + "<br>");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handling API Responses in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Handling API Responses in JavaScript</h1>
+
+        <p>Handling API responses is a crucial part of working with external data in web applications.</p>
+
+        <h2>Example: Handling API Responses</h2>
+        <button id="fetchDataButton">Fetch Data</button>
+        <div id="dataContainer"></div>
+        <script>
+            // Function to make an API request and fetch data
+            function fetchDataFromAPI() {
+                // Define the API endpoint URL
+                const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
+
+                // Use the fetch API to make a GET request
+                fetch(apiUrl)
+                    .then(function (response) {
+                        // Check if the response status is OK (200)
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        // Parse the JSON response
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        // Handle the data
+                        displayData(data);
+                    })
+                    .catch(function (error) {
+                        // Handle errors
+                        displayError(error);
+                    });
+            }
+
+            // Function to display data in the HTML container
+            function displayData(data) {
+                const dataContainer = document.getElementById("dataContainer");
+                dataContainer.innerHTML = `<strong>Title:</strong> ${data.title}<br><strong>Body:</strong> ${data.body}`;
+            }
+
+            // Function to display error messages in the HTML container
+            function displayError(error) {
+                const dataContainer = document.getElementById("dataContainer");
+                dataContainer.innerHTML = `<strong>Error:</strong> ${error.message}`;
+            }
+
+            // Attach an event listener to the button
+            const fetchDataButton = document.getElementById("fetchDataButton");
+            fetchDataButton.addEventListener("click", fetchDataFromAPI);
+        </script>
+    </div>
+</body>
+</html>

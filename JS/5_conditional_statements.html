@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditional Statements</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Conditional Statements</h1>
+
+        <h2>If Statement</h2>
+        <script>
+            // If statement
+            var age = 25;
+            if (age >= 18) {
+                document.write("You are an adult.<br>");
+            }
+        </script>
+
+        <h2>Else Statement</h2>
+        <script>
+            // If-else statement
+            var time = 14;
+            if (time < 12) {
+                document.write("Good morning!<br>");
+            } else {
+                document.write("Good afternoon!<br>");
+            }
+        </script>
+
+        <h2>Else If Statement</h2>
+        <script>
+            // If-else if-else statement
+            var hour = 15;
+            if (hour < 12) {
+                document.write("Good morning!<br>");
+            } else if (hour < 18) {
+                document.write("Good afternoon!<br>");
+            } else {
+                document.write("Good evening!<br>");
+            }
+        </script>
+
+        <h2>Switch Statement</h2>
+        <script>
+            // Switch statement
+            var dayOfWeek = "Tuesday";
+            switch (dayOfWeek) {
+                case "Monday":
+                    document.write("It's Monday!<br>");
+                    break;
+                case "Tuesday":
+                    document.write("It's Tuesday!<br>");
+                    
+                case "Wednesday":
+                    document.write("It's Wednesday!<br>");
+                    break;
+                default:
+                    document.write("It's some other day!<br>");
+            }
+        </script>
+    </div>
+</body>
+</html>

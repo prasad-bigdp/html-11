@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Modules in JavaScript</h1>
+
+        <h2>Example 1: Creating and Exporting a Module</h2>
+        <script type="module">
+            // Creating a module
+            const greeting = "Hello, ";
+
+            // Exporting a variable as part of the module
+            export { greeting };
+        </script>
+
+        <h2>Example 2: Importing a Module</h2>
+        <script type="module">
+            // Importing a module
+            import { greeting } from './module1.js';
+
+            console.log(greeting + "World!");
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Data Types</h1>
+
+        <h2>Primitive Data Types</h2>
+        <script>
+            // Number data type
+            var num = 42;
+            document.write("Number: " + num + "<br>");
+
+            // String data type
+            var str = "Hello, JavaScript!";
+            document.write("String: " + str + "<br>");
+
+            // Boolean data type
+            var isTrue = true;
+            document.write("Boolean: " + isTrue + "<br>");
+
+            // Undefined data type
+            var notDefined;
+            document.write("Undefined: " + notDefined + "<br>");
+
+            // Null data type
+            var nullValue = null;
+            document.write("Null: " + nullValue + "<br>");
+        </script>
+
+        <h2>Reference Data Types</h2>
+        <script>
+            // Object data type
+            var person = {
+                name: "John",
+                age: 30
+            };
+            document.write("Object: " + JSON.stringify(person) + "<br>");
+
+            // Array data type
+            var colors = ["red", "green", "blue"];
+            document.write("Array: " + JSON.stringify(colors) + "<br>");
+
+            // Function data type
+            function greet(name) {
+                return "Hello, " + name + "!";
+            }
+            document.write("Function: " + greet("Alice") + "<br>");
+        </script>
+    </div>
+</body>
+</html>

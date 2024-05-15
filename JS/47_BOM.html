@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+</head>
+<body>
+    <!--Geolocation API , HTML5--Geolocation,svg,drag and drop-->
+    <div id="main">
+
+    </div>
+    <script>
+        if ("geolocation" in navigator)
+        {
+            navigator.geolocation.getCurrentPosition(function(pos)
+            {
+                const {latitude,longitude} = pos.coords;
+                console.log('latitude is'+latitude+"longitude is"+longitude)
+            main.textContent= 'latitude is' + latitude + "longitude is" + longitude;
+            })
+        }
+        /* web RTC*/
+        navigator.mediaDevices
+        .getUserMedia({video:true,audio:true})
+        .then(function(stream)
+        {
+
+        })
+        .catch(function(error){
+            console.log("error done")
+        })
+        /* svg features */$
+    </script>
+
+    
+</body>
+</html>

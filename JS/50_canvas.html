@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <!-- canvas is used to draw graphics 2D and 3D directly on your web page-->
+    <canvas id="mycanvas" width="400" height="200"></canvas>
+    <script>
+        //create a empty canvas and add a rect but button-click, different colour and different size rectangle to come
+             const canvas=document.getElementById('mycanvas');
+             const ctx= canvas.getContext('2d')
+             console.log(ctx)
+             ctx.fillStyle='blue';
+             ctx.fillRect(50,50,100,75);
+             // draw text
+             ctx.font='20px Arial';
+             ctx.fillText("hello, this is my canvas",150,150);
+             ctx.clearRect(0,0,canvas.width,canvas.height)
+
+    </script>
+</body>
+</html>

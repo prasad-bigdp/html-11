@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and Manipulating Arrays</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Creating and Manipulating Arrays</h1>
+
+        <h2>Creating Arrays</h2>
+        <script>
+            // Creating an empty array
+            var emptyArray = [];
+
+            // Creating an array with values
+            var colors = ["red", "green", "blue"];
+
+            // Creating an array with the Array constructor
+            var numbers = new Array(1, 2, 3);
+
+            // Display arrays
+            document.write("Empty Array: " + emptyArray + "<br>");
+            document.write("Colors: " + colors + "<br>");
+            document.write("Numbers: " + numbers + "<br>");
+        </script>
+
+        <h2>Accessing Array Elements</h2>
+        <script>
+            // Accessing array elements by index
+            var fruits = ["apple", "banana", "cherry"];
+            var firstFruit = fruits[0];
+            var secondFruit = fruits[1];
+
+            // Display elements
+            document.write("First Fruit: " + firstFruit + "<br>");
+            document.write("Second Fruit: " + secondFruit + "<br>");
+        </script>
+
+        <h2>Modifying Array Elements</h2>
+        <script>
+            // Modifying array elements by index
+            var animals = ["dog", "cat", "rabbit"];
+            animals[1] = "parrot";
+
+            // Display modified array
+            document.write("Animals: " + animals + "<br>");
+        </script>
+
+        <h2>Array Methods</h2>
+        <script>
+            // Adding elements to an array (push)
+            var fruits = ["apple", "banana"];
+            fruits.push("cherry");
+
+            // Removing elements from the end of an array (pop)
+            var removedFruit = fruits.pop();
+
+            // Adding elements to the beginning of an array (unshift)
+            fruits.unshift("kiwi");
+
+            // Removing elements from the beginning of an array (shift)
+            var removedFruit2 = fruits.shift();
+
+            // Display modified array and removed elements
+            document.write("Fruits: " + fruits + "<br>");
+            document.write("Removed Fruit (pop): " + removedFruit + "<br>");
+            document.write("Removed Fruit (shift): " + removedFruit2 + "<br>");
+        </script>
+    </div>
+</body>
+</html>

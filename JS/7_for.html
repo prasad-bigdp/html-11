@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript For Loops</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript For Loops</h1>
+
+        <h2>Standard for Loop</h2>
+        <script>
+            // Standard for loop
+            for (var i = 1; i <= 5; i++) {
+                document.write("Iteration " + i + "<br>");
+            }
+        </script>
+
+        <h2>For-In Loop (for Objects and Arrays)</h2>
+        <script>
+            // For-in loop (for objects and arrays)
+            var person = {
+                name: "John",
+                age: 30,
+                city: "New York"
+            };
+
+            for (var key in person) {
+                document.write(key + ": " + person[key] + "<br>");
+            }
+        </script>
+
+        <h2>For-Of Loop (for Arrays and Iterable Objects)</h2>
+        <script>
+            // For-of loop (for arrays and iterable objects)
+            var colors = ["red", "green", "blue"];
+
+            for (var color of colors) {
+                document.write("Color: " + color + "<br>");
+            }
+        </script>
+
+        <h2>forEach Loop (for Arrays)</h2>
+        <script>
+            // forEach loop (for arrays)
+            var fruits = ["apple", "banana", "cherry"];
+
+            fruits.forEach(function (fruit, index) {
+                document.write("Fruit at index " + index + ": " + fruit + "<br>");
+            });
+        </script>
+    </div>
+</body>
+</html>

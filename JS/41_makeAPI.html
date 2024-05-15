@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making API Requests in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Making API Requests in JavaScript</h1>
+
+        <p>API requests allow you to fetch data from external services and integrate it into your web applications.</p>
+
+        <h2>Example: Fetching Data from an API</h2>
+        <button id="fetchDataButton">Fetch Data</button>
+        <div id="dataContainer"></div>
+        <script>
+            // Function to make an API request and fetch data
+            function fetchDataFromAPI() {
+                // Define the API endpoint URL
+                const apiUrl = "https://jsonplaceholder.typicode.com/posts/1";
+
+                // Use the fetch API to make a GET request
+                fetch(apiUrl)
+                    .then(function (response) {
+                        // Check if the response status is OK (200)
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        // Parse the JSON response
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        // Display the data in the HTML container
+                        const dataContainer = document.getElementById("dataContainer");
+                        dataContainer.innerHTML = `<strong>Title:</strong> ${data.title}<br><strong>Body:</strong> ${data.body}`;
+                    })
+                    .catch(function (error) {
+                        // Handle errors
+                        console.error("Error:", error);
+                    });
+            }
+
+            // Attach an event listener to the button
+            const fetchDataButton = document.getElementById("fetchDataButton");
+            fetchDataButton.addEventListener("click", fetchDataFromAPI);
+        </script>
+    </div>
+</body>
+</html>

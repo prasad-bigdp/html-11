@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread and Rest Operators in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Spread and Rest Operators in JavaScript</h1>
+
+        <h2>Example 1: Spread Operator</h2>
+        <script>
+            // Spread operator for arrays
+            const fruits = ["apple", "banana", "cherry"];
+            const moreFruits = ["strawberry", "kiwi", ...fruits];
+
+            console.log(moreFruits);
+        </script>
+
+        <h2>Example 2: Spread Operator with Objects</h2>
+        <script>
+            // Spread operator for objects
+            const person = { name: "Alice", age: 30 };
+            const updatedPerson = { ...person, city: "New York" };
+
+            console.log(updatedPerson);
+        </script>
+
+        <h2>Example 3: Rest Operator</h2>
+        <script>
+            // Rest operator in function parameters
+            function sum(...numbers) {
+                return numbers.reduce((total, num) => total + num, 0);
+            }
+
+            const result = sum(1, 2, 3, 4, 5);
+            console.log("Sum:", result);
+        </script>
+    </div>
+</body>
+</html>

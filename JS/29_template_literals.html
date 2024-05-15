@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Literals in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Template Literals in JavaScript</h1>
+
+        <h2>Example 1: Basic Template Literal</h2>
+        <script>
+            // Basic template literal
+            const name = "Alice";
+            const greeting = `Hello, ${name}!`;
+
+            console.log(greeting);
+        </script>
+
+        <h2>Example 2: Multi-line Template Literal</h2>
+        <script>
+            // Multi-line template literal
+            const message = `
+                This is a
+                multi-line
+                message.
+            `;
+
+            console.log(message);
+        </script>
+
+        <h2>Example 3: Expressions in Template Literals</h2>
+        <script>
+            // Using expressions in template literals
+            const a = 5;
+            const b = 10;
+            const result = `The sum of ${a} and ${b} is ${a + b}.`;
+
+            console.log(result);
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Scoping in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Lexical Scoping in JavaScript</h1>
+
+        <h2>Example 1: Nested Functions</h2>
+        <script>
+            // Outer function
+            function outerFunction() {
+                var outerVariable = "I'm from the outer function";
+
+                // Inner function
+                function innerFunction() {
+                    // Inner function can access the outer variable
+                    return "Inner Function: " + outerVariable;
+                }
+
+                // Call the inner function
+                return innerFunction();
+            }
+
+            // Call the outer function
+            var result1 = outerFunction();
+
+            // Display the result
+            document.write(result1 + "<br>");
+        </script>
+
+        <h2>Example 2: Lexical Scope in Nested Functions</h2>
+        <script>
+            // Global variable
+            var globalVariable = "I'm a global variable";
+
+            // Outer function
+            function outerFunction() {
+                // Outer function variable
+                var outerVariable = "I'm from the outer function";
+
+                // Inner function
+                function innerFunction() {
+                    // Inner function can access the outer and global variables
+                    return "Inner Function: " + outerVariable + " | Global Variable: " + globalVariable;
+                }
+
+                // Call the inner function
+                return innerFunction();
+            }
+
+            // Call the outer function
+            var result2 = outerFunction();
+
+            // Display the result
+            document.write(result2 + "<br>");
+        </script>
+    </div>
+</body>
+</html>

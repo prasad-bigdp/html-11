@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Predefined/Library Methods</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>JavaScript Predefined/Library Methods</h1>
+
+        <h2>String Methods</h2>
+        <script>
+            // String methods
+            var text = "Hello, World!";
+            var length = text.length; // Length of a string
+            var upperCase = text.toUpperCase(); // Convert to uppercase
+            var lowerCase = text.toLowerCase(); // Convert to lowercase
+            var substring = text.substring(0, 5); // Get a substring
+            var indexOfW = text.indexOf("W"); // Find the index of a character
+            var replacedText = text.replace("World", "JavaScript"); // Replace text
+
+            // Display string method results
+            document.write("Length of String: " + length + "<br>");
+            document.write("Uppercase: " + upperCase + "<br>");
+            document.write("Lowercase: " + lowerCase + "<br>");
+            document.write("Substring: " + substring + "<br>");
+            document.write("Index of 'W': " + indexOfW + "<br>");
+            document.write("Replaced Text: " + replacedText + "<br>");
+        </script>
+
+        <h2>Array Methods</h2>
+        <script>
+            // Array methods
+            var numbers = [1, 2, 3, 4, 5];
+            var joinedArray = numbers.join(", "); // Join array elements into a string
+            var copiedArray = numbers.slice(); // Copy an array
+            var reversedArray = numbers.slice().reverse(); // Reverse array elements
+            var sortedArray = numbers.slice().sort(); // Sort array elements
+            var removedElement = numbers.pop(); // Remove the last element
+
+            // Display array method results
+            document.write("Joined Array: " + joinedArray + "<br>");
+            document.write("Copied Array: " + copiedArray + "<br>");
+            document.write("Reversed Array: " + reversedArray + "<br>");
+            document.write("Sorted Array: " + sortedArray + "<br>");
+            document.write("Removed Element (pop): " + removedElement + "<br>");
+        </script>
+
+        <h2>Date Methods</h2>
+        <script>
+            // Date methods
+            var currentDate = new Date();
+            var year = currentDate.getFullYear(); // Get the current year
+            var month = currentDate.getMonth(); // Get the current month (0-11)
+            var day = currentDate.getDate(); // Get the day of the month (1-31)
+            var hours = currentDate.getHours(); // Get the current hour (0-23)
+            var minutes = currentDate.getMinutes(); // Get the current minute (0-59)
+
+            // Display date method results
+            document.write("Current Year: " + year + "<br>");
+            document.write("Current Month: " + month + "<br>");
+            document.write("Current Day: " + day + "<br>");
+            document.write("Current Hour: " + hours + "<br>");
+            document.write("Current Minutes: " + minutes + "<br>");
+        </script>
+    </div>
+</body>
+</html>

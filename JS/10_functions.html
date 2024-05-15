@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions with Parameters and Return Statements</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Functions with Parameters and Return Statements</h1>
+
+        <h2>Function with Parameters</h2>
+        <script>
+            // Function with parameters
+            function addNumbers(num1, num2) {
+                var sum = num1 + num2;
+                return sum;
+            }
+        
+            // function print(a,addNumbers)
+            // {
+            //     let b= addNumbers(3,2);
+            //     console.log(a+b);
+
+            // }
+            // print(4,addNumbers(3,2))
+
+            // Call the function with arguments
+            var result = addNumbers(5, 7);
+            document.write("Sum: " + result + "<br>");
+        </script>
+
+        <h2>Function with Default Parameters</h2>
+        <script>
+            // Function with default parameters
+            function greet(name = "Guest") {
+                return "Hello, " + name + "!";
+            }
+
+            // Call the function without providing an argument
+            var greeting1 = greet();
+            document.write("Greeting 1: " + greeting1 + "<br>");
+
+            // Call the function with an argument
+            var greeting2 = greet("Alice");
+            document.write("Greeting 2: " + greeting2 + "<br>");
+        </script>
+
+        <h2>Function with Multiple Return Statements</h2>
+        <script>
+            // Function with multiple return statements
+            function isEven(number) {
+                if (number % 2 === 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            // Call the function and check the result
+            var number1 = 8;
+            var isNumber1Even = isEven(number1);
+            document.write(number1 + " is even: " + isNumber1Even + "<br>");
+
+            var number2 = 15;
+            var isNumber2Even = isEven(number2);
+            document.write(number2 + " is even: " + isNumber2Even + "<br>");
+        </script>
+    </div>
+</body>
+</html>

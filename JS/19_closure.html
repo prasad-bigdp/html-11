@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Concept in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Closure Concept in JavaScript</h1>
+
+        <h2>Example 1: Basic Closure</h2>
+        <script>
+            // Outer function
+            function outerFunction() {
+                var outerVariable = "I'm from the outer function";
+
+                // Inner function (closure)
+                function innerFunction() {
+                    // Inner function can access the outer variable
+                    return "Inner Function: " + outerVariable;
+                }
+
+                // Return the inner function (closure)
+                return innerFunction;
+            }
+
+            // Create a closure
+            var closure = outerFunction();
+
+            // Call the closure
+            var result = closure();
+
+            // Display the result
+            document.write(result + "<br>");
+        </script>
+
+        <h2>Example 2: Closure with Parameters</h2>
+        <script>
+            function createMultiplier(factor) {
+                // Outer function takes a parameter
+
+                // Inner function (closure)
+                function multiplier(number) {
+                    // Inner function can access the outer parameter
+                    return number * factor;
+                }
+
+                // Return the inner function (closure)
+                return multiplier;
+            }
+
+            // Create closures with different factors
+            var double = createMultiplier(2);
+            var triple = createMultiplier(3);
+
+            // Use closures to perform multiplication
+            var result1 = double(5); // 2 * 5 = 10
+            var result2 = triple(5); // 3 * 5 = 15
+
+            // Display the results
+            document.write("Double: " + result1 + "<br>");
+            document.write("Triple: " + result2 + "<br>");
+        </script>
+    </div>
+</body>
+</html>

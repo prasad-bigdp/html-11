@@ -1,0 +1,555 @@
+Fundamentals:
+
+1. Differences between var, let, and const:
+
+var (functionally scoped, globally accessible if not declared within a block) is generally discouraged due to potential scoping issues.
+let (block-scoped) and const (block-scoped and read-only) are preferred for better code clarity and reduced risk of unintended variable modifications.
+
+2.Primitive data types:
+
+JavaScript has six primitive data types: string, number, boolean, undefined, null, and symbol (introduced in ES6).
+
+3.Declaring and accessing functions:
+Functions are declared using the function keyword followed by the function name, parameters (optional), and the function body enclosed in curly braces. They can be accessed by their name and called with optional arguments.
+
+4.Hoisting:
+
+In JavaScript, variable declarations with var are hoisted to the top of their scope (function or global), making them accessible before their declaration. Let and const are not hoisted and respect block scope.
+
+5.Closures:
+
+A closure is a function that has access to the variable environment (including variables) of its outer function, even after the outer function has returned. This allows them to "remember" values from their enclosing scope.
+
+6. == vs. ===:
+
+== performs loose comparison, attempting to convert values to a common type before comparison. This can lead to unexpected results because of type coercion.
+=== performs strict comparison, checking both value and type equality. It is generally recommended for reliable comparisons.
+
+7.Looping through an array:
+for loop: Iterates a specific number of times based on a counter variable.
+forEach method: Iterates through each element in the array, calling a provided function for each element.
+
+8.this keyword:
+The this keyword refers to the current object context within which a function is being executed. Its value can change depending on how the function is called.
+
+9. Error handling:
+JavaScript offers various ways to handle errors, including:
+try...catch block: Attempts code within try, catches any errors in catch, and optionally provides an error handler.
+throw statement: Explicitly throws an error object to be handled by a catch block.
+
+10.Event Loop:
+JavaScript is single-threaded, meaning it executes code one line at a time. The Event Loop manages the execution of asynchronous operations (like network requests) by placing them in a queue and processing them when the main thread is available.
+
+
+11. How do you select and manipulate elements in the DOM using JavaScript?
+
+Answer: You can use various methods to select and manipulate elements:
+
+getElementById(id): Retrieves an element by its unique ID.
+getElementsByTagName(tagName): Returns a collection of elements with the specified tag name.
+querySelector(selector): Selects the first element matching a CSS selector.
+querySelectorAll(selector): Returns a collection of elements matching a CSS selector.
+Once selected, use properties and methods to manipulate them:
+
+.innerHTML: Sets or gets the inner HTML content of an element.
+.style: Access and modify the CSS styles of an element.
+.classList: Add, remove, or toggle CSS classes on an element.
+.setAttribute(attributeName, attributeValue): Set or modify an element's attribute.
+12. What is the difference between getElementById and getElementsByTagName?
+
+Answer:
+
+getElementById:
+Retrieves a single element with a unique ID.
+Returns null if no matching element is found.
+Faster due to efficient lookup by ID.
+getElementsByTagName:
+Returns a collection of elements with a specific tag name.
+May return an empty collection if no matching elements are found.
+Slower as it searches the entire DOM for matching elements.
+13. What are event listeners in JavaScript, and how do you use them?
+
+Answer: Event listeners are functions that wait for specific events to occur on an element. These events can be user interactions (clicks, key presses) or browser events (page load, window resize).
+
+To use them:
+
+Select the target element using methods like getElementById.
+Use the addEventListener method on the element, specifying the event type and the event listener function.
+Example:
+
+JavaScript
+const button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
+});
+Use code with caution.
+14. Describe common DOM manipulation methods like appendChild and createElement.
+
+Answer:
+
+appendChild(child): Appends a child node (element or text) as the last child of the specified element.
+createElement(tagName): Creates a new HTML element with the specified tag name (e.g., div, p, span).
+removeChild(child): Removes a child node from the parent element.
+insertBefore(newNode, referenceNode): Inserts a new node before the specified reference node as a child of the same parent.
+These methods allow you to dynamically add, remove, and modify the structure and content of your web page.
+
+15. How do you implement animations using JavaScript and the DOM?
+
+Answer: There are several ways to implement animations in JavaScript:
+
+CSS animations: Define animations using CSS keyframes and trigger them using JavaScript classes or style changes.
+JavaScript animations: Use the setInterval or requestAnimationFrame methods to manipulate element styles or properties over time, creating animation effects.
+JavaScript libraries: Utilize animation libraries like GSAP or Anime.js for more complex and powerful animation capabilities.
+
+DOM related Q&A
+11. How do you select and manipulate elements in the DOM using JavaScript?
+Answer: You can use various methods to select and manipulate elements:
+getElementById(id): Retrieves an element by its unique ID.
+getElementsByTagName(tagName): Returns a collection of elements with the specified tag name.
+querySelector(selector): Selects the first element matching a CSS selector.
+querySelectorAll(selector): Returns a collection of elements matching a CSS selector.
+Once selected, use properties and methods to manipulate them:
+.innerHTML: Sets or gets the inner HTML content of an element.
+.style: Access and modify the CSS styles of an element.
+.classList: Add, remove, or toggle CSS classes on an element.
+.setAttribute(attributeName, attributeValue): Set or modify an element's attribute.
+
+12. What is the difference between getElementById and getElementsByTagName?
+Answer:
+getElementById:
+Retrieves a single element with a unique ID.
+Returns null if no matching element is found.
+Faster due to efficient lookup by ID.
+getElementsByTagName:
+Returns a collection of elements with a specific tag name.
+May return an empty collection if no matching elements are found.
+Slower as it searches the entire DOM for matching elements.
+
+13. What are event listeners in JavaScript, and how do you use them?
+Answer: Event listeners are functions that wait for specific events to occur on an element. These events can be user interactions (clicks, key presses) or browser events (page load, window resize).
+
+To use them:
+
+Select the target element using methods like getElementById.
+Use the addEventListener method on the element, specifying the event type and the event listener function.
+Example:
+const button = document.getElementById("myButton");
+button.addEventListener("click", function() {
+  alert("Button clicked!");
+});
+Use code with caution.
+
+14. Describe common DOM manipulation methods like appendChild and createElement.
+Answer:
+appendChild(child): Appends a child node (element or text) as the last child of the specified element.
+createElement(tagName): Creates a new HTML element with the specified tag name (e.g., div, p, span).
+removeChild(child): Removes a child node from the parent element.
+insertBefore(newNode, referenceNode): Inserts a new node before the specified reference node as a child of the same parent.
+These methods allow you to dynamically add, remove, and modify the structure and content of your web page.
+
+15. How do you implement animations using JavaScript and the DOM?
+Answer: There are several ways to implement animations in JavaScript:
+CSS animations: Define animations using CSS keyframes and trigger them using JavaScript classes or style changes.
+JavaScript animations: Use the setInterval or requestAnimationFrame methods to manipulate element styles or properties over time, creating animation effects.
+JavaScript libraries: Utilize animation libraries like GSAP or Anime.js for more complex and powerful animation capabilities.
+
+PROTOTYPES and OBJECTS:
+
+16. Explain the role of prototypes in JavaScript's inheritance model and how properties and behaviors are shared among objects.
+Answer:
+Prototypes as blueprints: Every object in JavaScript has a hidden property called [[Prototype]] linking it to another object (its prototype). This creates a prototype chain.
+Inheritance: When you attempt to access a property on an object, JavaScript first checks the object itself. If not found, it looks up the prototype chain for the property.
+Prototype chain: Provides a mechanism for objects to inherit properties and methods from other objects, similar to class-based inheritance.
+Constructor functions: Often used to create objects with a shared prototype, ensuring they all inherit the same set of properties and behaviors.
+
+17. How do you create and inherit properties from objects in JavaScript?
+Answer:
+Object literals: Properties are added directly within curly braces {}.
+Constructor functions: Functions act as blueprints for objects with properties defined using 'this' inside the function.
+Prototypal inheritance: Properties defined on an object's prototype become available to all objects linked to that prototype via the prototype chain.
+Object.create(): Creates a new object with a specified prototype.
+Classes (ES6): Introduced a syntactical layer over prototypal inheritance to resemble class-based inheritance.
+
+18. What are the differences between object literal notation and constructor functions?
+Answer:
+Object Literals:
+Simple syntax for creating one-off objects.
+Properties and methods are directly defined within curly braces.
+Constructor Functions:
+Define reusable blueprints for objects.
+Create multiple objects with similar properties and behaviors.
+Choose when:
+
+Object literals: Simple, unique objects.
+Constructor functions: Multiple objects with shared structure and functionality.
+
+19. Explain the purpose of the prototype keyword in constructors.
+Answer:
+Shared storage: The prototype property of a constructor function acts as a shared store for properties and methods.
+Inheritance: When a new object is created using the constructor, it inherits properties and methods from the constructor's prototype.
+
+20. Describe how to implement getters and setters in JavaScript objects.
+Answer:
+Getters and Setters: Special methods defined within an object to intercept property reads and writes.
+Syntax: javascript let obj = { get property() { ... }, set property(value) { ... } }
+Use cases: - Calculated properties (derived from other values). - Data validation before modification. - Triggering side-effects when a property changes.
+
+FUNCTIONS:
+21. How do you write anonymous functions in JavaScript?
+Answer: Anonymous functions are functions defined without a specific name. This makes them useful primarily as callback functions and expressions:
+
+Traditional way:
+function(parameters) {
+  // Function body
+}
+Use code with caution.
+
+Arrow function syntax (ES6):
+(parameters) => {
+  // Function body
+}
+Use code with caution.
+Example: Passing an anonymous function as a callback
+
+let numbers = [1, 2, 3];
+numbers.forEach(function(number) {
+  console.log(number * 2);
+});
+Use code with caution.
+
+22. Explain the concept of first-class functions in JavaScript.
+Answer: In JavaScript, functions are treated as "first-class citizens." This means they behave like any other data type and can be:
+
+Assigned to variables:
+JavaScript
+let greet = function(name) {
+   return "Hello, " + name;
+}
+Use code with caution.
+Passed as arguments to other functions:
+JavaScript
+function callAnotherFunction(func, argument) {
+    return func(argument);
+}
+Use code with caution.
+Returned from other functions:
+JavaScript
+function createMultiplier(factor) {
+   return function(number) {
+      return number * factor;
+   }
+}
+let double = createMultiplier(2);
+Use code with caution.
+
+23. What are arrow functions in JavaScript, and when are they preferable?
+Answer: Arrow functions (introduced in ES6) offer a shorter syntax for function expressions with implicit this binding:
+
+Syntax: (parameters) => { function_body }
+Implicit this: Arrow functions inherit the this value from their enclosing scope, eliminating the need for .bind().
+Concise: Ideal for simple functions and callbacks.
+Preferable when:
+
+You need a shorter syntax.
+You need the this keyword to refer to the enclosing scope.
+
+24. Describe the arguments object and how it can be used.
+Answer:  The arguments object is a special variable available inside all (non-arrow) functions. It holds an array-like collection of the arguments passed to the function.
+
+Use cases:
+Accessing all arguments even if they're not defined as parameters.
+Creating functions that accept a variable number of arguments.
+Note: In modern JavaScript, it's often preferred to use rest parameters (...args) for cleaner variable-length argument handling.
+
+25. Explain the concept of recursion in JavaScript, providing an example.
+Answer: Recursion is when a function calls itself within its definition. It's a powerful technique for breaking complex problems into smaller, self-similar parts.
+
+Example (factorial calculation)
+function factorial(n) {
+  if (n === 0) { 
+    return 1; // Base case
+  } else {
+    return n * factorial(n - 1); // Recursive case
+  }
+}
+Use code with caution.
+Key points:
+
+Base case: A condition to stop the recursion.
+Recursive case: The function calls itself with a modified input to approach the base case.
+
+ARRAYS:
+26. Describe different methods for sorting and searching arrays in JavaScript.
+Answer:
+Sorting
+Array.prototype.sort(): Sorts elements, by default converting them to strings and comparing UTF-16 character codes. Accepts an optional comparison function.
+Custom comparison functions: Allow control over sorting based on different criteria.
+Searching
+Array.prototype.indexOf(): Finds the first index of an element, returns -1 if not found.
+Array.prototype.find(): Finds the first element matching a given condition.
+Array.prototype.includes(): Checks if an element exists in the array (boolean).
+
+
+27. How do you implement linked lists and stacks in JavaScript?
+
+Answer: While not built-in data structures, linked lists and stacks can be implemented using JavaScript objects and functions.
+
+Linked List:
+// Node structure
+function Node(data) {
+  this.data = data;
+  this.next = null;
+}
+
+// Linked list class
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  // Add a new element to the beginning of the list (head)
+  push(data) {
+    const newNode = new Node(data);
+    newNode.next = this.head;
+    this.head = newNode;
+  }
+
+  // Remove the first element from the list (head)
+  pop() {
+    if (this.isEmpty()) return;
+    const removedNode = this.head;
+    this.head = this.head.next;
+    return removedNode.data;
+  }
+
+  // Check if the list is empty
+  isEmpty() {
+    return this.head === null;
+  }
+}
+Use code with caution.
+Stack:
+
+// Stack class using an array for internal storage
+class Stack {
+  constructor() {
+    this.items = [];
+  }
+
+  // Push an element onto the stack (top)
+  push(item) {
+    this.items.push(item);
+  }
+
+  // Pop an element from the stack (top)
+  pop() {
+    return this.items.pop();
+  }
+
+  // Check if the stack is empty
+  isEmpty() {
+    return this.items.length === 0;
+  }
+}
+Use code with caution.
+Key points:
+
+Both use objects to represent nodes/items with data and references to other elements in the structure.
+Linked lists offer efficient insertion and removal at any position, while stacks follow LIFO (Last In, First Out) operations (push/pop from the top).
+
+28. Explain the purpose of maps and sets in JavaScript, and their use cases.
+Answer: Both maps and sets are data structures introduced in ES6, providing alternative ways to store and manage data:
+
+Maps:
+
+Maps hold key-value pairs, similar to objects, but:
+Keys can be of any data type: Not just strings like in objects.
+Faster lookups: Especially for complex keys or large datasets.
+Use cases:
+
+Storing data with unique identifiers (e.g., user ID and their preferences).
+Storing configuration objects where keys might not be strings.
+Sets:
+
+Sets are collections of unique values:
+No duplicate elements allowed.
+Faster checks for value existence compared to arrays for large datasets.
+Use cases:
+
+Keeping track of unique IDs or user IDs.
+Removing duplicates from arrays or user input data.
+
+29. Describe the differences between asynchronous and synchronous code execution in JavaScript.
+Answer:
+Synchronous: Code executes line by line, waiting for each line to finish before moving to the next. The browser or environment is blocked until the current line finishes.
+
+Asynchronous: Code execution doesn't necessarily follow a strict order. Operations that take time (e.g., network requests, file I/O) can be initiated without blocking the main thread. JavaScript uses an event loop to manage and handle these asynchronous operations efficiently.
+
+Key points:
+
+Asynchronous code allows non-blocking operations, improving responsiveness and user experience.
+Handling asynchronous code requires managing callbacks, promises, or async/await for reliable execution flow.
+
+30. Explain how you would handle asynchronous operations like fetching data from an API.
+Answer: There are several ways to handle asynchronous operations like fetching data from an API:
+
+Callbacks: Define functions to be called once the asynchronous operation completes (often leading to "callback hell" for complex chains).
+
+Promises: Represent the eventual completion (or failure) of an asynchronous operation, allowing for chaining and improved control flow.
+
+Async/await (ES6): Syntactic sugar over promises, making asynchronous code look more synchronous and easier to read and manage.
+
+Common approach:
+
+Use fetch API to make the API request.
+Use a promise or async/await to handle the response:
+On success, access the data and process it.
+On error, handle the error appropriately (e.g., display an error message to the user).
+
+36. How do you include external JavaScript files in an HTML document?
+Answer: There are two primary ways to include external JavaScript files:
+
+<script> tag with src attribute:
+
+HTML
+<script src="path/to/your/script.js"></script>
+Use code with caution.
+The browser fetches the script from the specified path before running the rest of the HTML document.
+defer attribute:
+
+HTML
+<script src="path/to/your/script.js" defer></script>
+Use code with caution.
+Delays the execution of the script until after the HTML parsing is complete, improving page load performance.
+async attribute:
+
+HTML
+<script src="path/to/your/script.js" async></script>
+Use code with caution.
+Loads the script in parallel with the HTML parsing, potentially improving performance, but execution order isn't guaranteed.
+
+37. Explain the concept of modules in JavaScript and how they can be imported and exported.
+Answer:
+
+Modules: Reusable blocks of code that encapsulate functionality and variables, promoting modularity and code organization.
+
+ES6 Modules (import/export):
+
+Use export keyword to make variables or functions available outside the module.
+Use import statement to import modules and access exported entities.
+Example:
+
+JavaScript
+// math.js (exporting functions)
+export function add(a, b) {
+  return a + b;
+}
+
+// main.js (importing and using)
+import { add } from './math.js';
+const result = add(5, 3); // result will be 8
+Use code with caution.
+
+38. How do you implement basic form validation in JavaScript?
+Answer: Basic form validation steps:
+
+Attach event listener: Add an event listener (e.g., onsubmit) to the form to capture the submission event.
+
+Prevent default behavior: In the event handler, use event.preventDefault() to prevent the default form submission behavior.
+
+Access form elements: Use document.getElementById or similar methods to access specific form elements (e.g., input fields).
+
+Validation logic: Perform validation checks on the collected data. Examples:
+
+Check if required fields are filled.
+Validate email format using regular expressions.
+Ensure numerical input falls within a specific range.
+Display errors: If validation fails, use methods like alert or DOM manipulation to display error messages to the user.
+
+39. Describe common JavaScript testing frameworks like Jest or Mocha.
+
+Answer:
+
+Testing frameworks: Tools that provide structure and utilities for writing and running automated tests for JavaScript code.
+
+Popular frameworks:
+
+Jest: Provides a comprehensive testing environment with features like snapshot testing and easy setup.
+Mocha: A flexible testing framework focused on running tests and allowing customization of test execution.
+Testing benefits:
+
+Improves code quality by catching errors and regressions.
+Provides confidence in code behavior and functionality.
+Enables refactoring and code changes with reduced risk.
+
+40. Explain how to implement unit tests for your JavaScript code.
+Answer:
+Unit testing: Isolates and tests individual units of code (functions, modules) to verify their behavior for specific inputs.
+Components of a unit test:
+Test setup: Arrange the environment for the test (e.g., create mock objects).
+Assertion: Use testing framework methods (e.g., expect in Jest) to verify the expected behavior of the unit under test.
+Test cleanup: Clean up any resources used during the test.
+Example (unit testing a add function):
+// Using Jest
+test('add function adds two numbers correctly', () => {
+  const result = add(5, 3);
+  expect(result).toBe(8);
+});
+
+ADVANCED:
+
+41. Describe the purpose and usage of the fetch API for making HTTP requests.
+Purpose: The fetch API provides a modern, promise-based interface for making network requests (e.g., REST API calls) from within JavaScript. It replaced the older XMLHttpRequest approach, offering a cleaner syntax and better error handling.
+Usage:
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error(error));
+Use code with caution.
+Steps:
+Call fetch with the URL to request
+fetch returns a promise.
+.then() handles successful responses (you can chain them to further process the data).
+.catch() handles errors.
+
+42. Explain the concept of the DOMContentLoaded event and its use.
+Concept: The DOMContentLoaded event fires when the HTML document has been completely parsed and built into the DOM tree, even if external resources (images, stylesheets) are still loading.
+Use Cases:
+Executing scripts that need to access DOM elements: If your JavaScript code relies on the structure of the HTML document being ready, placing your code within a DOMContentloaded listener ensures that necessary elements are present.
+Improving real and perceived performance: Users get the impression that a page is loading faster when content is visible, even if background downloads are ongoing.
+Example:
+document.addEventListener('DOMContentLoaded', () => {
+    // JavaScript code that needs to manipulate DOM elements goes here 
+});
+Use code with caution.
+
+43. How do you handle cross-browser compatibility issues in JavaScript?
+Key Challenges: Different browsers implement JavaScript, CSS, and standards in slightly different ways.
+Strategies:
+Feature detection: Check if a browser supports a particular feature before using it (often done with libraries like Modernizr).
+Polyfills: Provide code to implement missing features (when possible) for older browsers.
+Progressive enhancement: Design a basic functional website and then enhance it based on feature support.
+Use browser compatibility tools: Services like caniuse.com and browser-specific developer tools assist in awareness.
+Write Standards-compliant code: Following recommended web standards minimizes variability between browsers.
+
+44. Describe the advantages and disadvantages of using frameworks like React or Angular.
+Advantages:
+Structure and Organization: Enforce clear structure for large projects.
+Component-based development: Modularize code for reusability and maintainability.
+Performance: Enable efficient DOM updates (e.g., React's virtual DOM)
+Ecosystems: Access large communities, tools, and libraries.
+Disadvantages:
+Learning curve: Frameworks have an initial learning curve.
+Overhead: Can add size and complexity to simpler projects.
+Potential lock-in: Projects become heavily dependent on the selected framework.
+
+45. Explain the concept of Node.js and its use cases for building server-side applications.
+Concept: Node.js is a JavaScript runtime built on Chrome's V8 engine. It enables JavaScript execution outside of a web browser, on servers.
+
+Use Cases:
+
+Real-time applications: WebSockets for things like chats, dashboards, or multiplayer games.
+APIs and RESTful services: Create backends and access data.
+I/O-bound applications: Handling many concurrent connections with a non-blocking, event-driven model.
+Web Scraping and data processing:
+Tooling and build scripts: Modern development toolchains often depend on Node.js.

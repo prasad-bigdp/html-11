@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher-Order Functions in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Higher-Order Functions in JavaScript</h1>
+
+        <h2>Example 1: Function as a Parameter</h2>
+        <script>
+            // Higher-order function that takes a function as a parameter
+            function operateOnNumbers(a, b, operation) {
+                return operation(a, b);
+            }
+
+            // Regular functions to perform operations
+            function add(x, y) {
+                return x + y;
+            }
+
+            function subtract(x, y) {
+                return x - y;
+            }
+
+            // Using the higher-order function to perform operations
+            const result1 = operateOnNumbers(5, 3, add);
+            const result2 = operateOnNumbers(8, 4, subtract);
+
+            console.log("Result 1 (Addition):", result1);
+            console.log("Result 2 (Subtraction):", result2);
+        </script>
+
+        <h2>Example 2: Function as a Return Value</h2>
+        <script>
+            // Higher-order function that returns a function
+            function createMultiplier(factor) {
+                return function (number) {
+                    return number * factor;
+                };
+            }
+
+            // Creating multiplier functions
+            const double = createMultiplier(2);
+            const triple = createMultiplier(3);
+
+            const result3 = double(4); // 4 * 2
+            const result4 = triple(5); // 5 * 3
+
+            console.log("Result 3 (Double):", result3);
+            console.log("Result 4 (Triple):", result4);
+        </script>
+    </div>
+</body>
+</html>

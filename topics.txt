@@ -40,3 +40,32 @@ UTILITIEs
 COMPONENTS
 
 Build Project
+
+
+JS TOPICS:
+variables(var,let,const),
+hoisting,execution content,call stack
+data types(math methods,string methods, boolean,undefined,null)
+array,objects
+functions(callback,closure,fn expression)
+DOM(selection,manipulation,create)
+DOM(styling,classes)
+Events(listners vs handlers,propagration-bubbling,capturing, delgation)
+async(timers-settimeout,setinterval)
+fetch
+promises
+async await
+API's- with and without key
+axios
+lexical scope(this)
+ES6 - arrow, rest vs spread, destructuring
+
+
+
+
+
+
+
+
+
+

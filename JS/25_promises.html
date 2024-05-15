@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Promises in JavaScript</h1>
+
+        <h2>Example 1: Creating a Promise</h2>
+        <script>
+            // Creating a Promise
+            let anyname = new Promise(function (resolve, reject) {
+                // Simulate an asynchronous task (e.g., data fetching)
+                setTimeout(function () {
+                    let data = "jhsgdsghj kjdsgfshgfhgsj!";
+                    let isLogin=false;
+                    if(isLogin){
+                        resolve(data);
+                    }
+                    else
+                    {
+                        reject("i'm rejected")
+                    }
+                    // Resolve the Promise with the data
+                
+                    // Reject the Promise with an error (uncomment to test rejection)
+                    // reject("Error: Data retrieval failed!");
+                }, 5000);
+            });
+            // Using the Promise
+            anyname
+                .then(function (result) {
+                    console.log("Resolved: " + result);
+                    return "user successfully logged in"
+                })
+                .then(function(msg){
+                    console.log(msg)
+                   
+                    return "bye,bye"
+                })
+                .catch(function (error) {
+                    console.info("Rejected: " + error);
+                })
+                .then(function(m){
+                    console.log(m)
+                     
+                })
+        </script>
+
+        <h2>Example 2: Chaining Promises</h2>
+        <script>
+            // Function that returns a Promise
+            function fetchData() {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        var data = "Data fetched successfully!";
+                        resolve(data);
+                    }, 1000);
+                });
+            }
+
+            // Chaining Promises
+            fetchData()
+                .then(function (result) {
+                    console.log("Step 1: " + result);
+                    // Simulate another asynchronous task
+                    return new Promise(function (resolve) {
+                        setTimeout(function () {
+                            var newData = "Additional data processed!";
+                            resolve(newData);
+                        }, 1500);
+                    });
+                })
+                .then(function (result) {
+                    console.log("Step 2: " + result);
+                })
+                .catch(function (error) {
+                    console.error("Error: " + error);
+                });
+        </script>
+    </div>
+</body>
+</html>

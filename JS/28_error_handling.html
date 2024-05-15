@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Error Handling in JavaScript</h1>
+
+        <h2>Example 1: Basic Error Handling</h2>
+        <script>
+            try {
+                // Code that may cause an error
+                var result = 10 / 0; // Attempting to divide by zero
+                console.log("Result: " + result);
+            } catch (error) {
+                // Handle the error
+                console.error("Error occurred: " + error.message);
+            }
+        </script>
+
+        <h2>Example 2: Custom Error Handling</h2>
+        <script>
+            function divide(x, y) {
+                if (y === 0) {
+                    // Throw a custom error
+                    throw new Error("Division by zero is not allowed.");
+                }
+                return x / y;
+            }
+
+            try {
+                var result = divide(10, 0); // Attempting to divide by zero
+                console.log("Result: " + result);
+            } catch (error) {
+                // Handle the custom error
+                console.error("Custom Error: " + error.message);
+            }
+        </script>
+    </div>
+</body>
+</html>

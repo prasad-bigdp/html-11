@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and Working with Objects</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Creating and Working with Objects</h1>
+
+        <h2>Creating Objects</h2>
+        <script>
+            // Creating an empty object
+            var person = {};
+
+            // Creating an object with properties
+            var car = {
+                make: "Toyota",
+                model: "Camry",
+                year: 2022
+            };
+
+            // Display objects
+            document.write("Person: " + JSON.stringify(person) + "<br>");
+            document.write("Car: " + JSON.stringify(car) + "<br>");
+        </script>
+
+        <h2>Accessing Object Properties</h2>
+        <script>
+            // Accessing object properties using dot notation
+            var carMake = car.make;
+            var carModel = car.model;
+
+            // Accessing object properties using bracket notation
+            var carYear = car["year"];
+
+            // Display accessed properties
+            document.write("Car Make: " + carMake + "<br>");
+            document.write("Car Model: " + carModel + "<br>");
+            document.write("Car Year: " + carYear + "<br>");
+        </script>
+
+        <h2>Modifying Object Properties</h2>
+        <script>
+            // Modifying object properties
+            car.year = 2023;
+            car["color"] = "blue";
+
+            // Display modified object
+            document.write("Modified Car: " + JSON.stringify(car) + "<br>");
+        </script>
+
+        <h2>Adding and Deleting Object Properties</h2>
+        <script>
+            // Adding a new property
+            car.price = 25000;
+
+            // Deleting a property
+            delete car.model;
+
+            // Display updated object
+            document.write("Updated Car: " + JSON.stringify(car) + "<br>");
+        </script>
+
+        <h2>Looping Through Object Properties</h2>
+        <script>
+            // Looping through object properties
+            for (var key in car) {
+                var value = car[key];
+                document.write("Key: " + key + ", Value: " + value + "<br>");
+            }
+        </script>
+    </div>
+</body>
+</html>

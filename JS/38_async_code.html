@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Asynchronous Code in JavaScript</title>
+</head>
+<body>
+    <!-- This is a comment. It won't be displayed in the web page. -->
+
+    <div class="container">
+        <!-- .container creates a fixed-width container with centered content -->
+
+        <h1>Working with Asynchronous Code in JavaScript</h1>
+
+        <h2>Example 1: Using Callbacks</h2>
+        <script>
+            // Simulate an asynchronous operation with a callback
+            function fetchDataWithCallback(callback) {
+                setTimeout(function () {
+                    const data = "Async data fetched with callback";
+                    callback(data);
+                }, 1000);
+            }
+
+            // Using the callback to handle the data
+            fetchDataWithCallback(function (result) {
+                console.log(result);
+            });
+        </script>
+
+        <h2>Example 2: Using Promises</h2>
+        <script>
+            // Simulate an asynchronous operation with a Promise
+            function fetchDataWithPromise() {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        const data = "Async data fetched with Promise";
+                        resolve(data);
+                    }, 1000);
+                });
+            }
+
+            // Using the Promise to handle the data
+            fetchDataWithPromise()
+                .then(function (result) {
+                    console.log(result);
+                })
+                .catch(function (error) {
+                    console.error(error);
+                });
+        </script>
+
+        <h2>Example 3: Using async/await</h2>
+        <script>
+            // Simulate an asynchronous operation with async/await
+            async function fetchDataWithAsyncAwait() {
+                return new Promise(function (resolve, reject) {
+                    setTimeout(function () {
+                        const data = "Async data fetched with async/await";
+                        resolve(data);
+                    }, 1000);
+                });
+            }
+
+            // Using async/await to handle the data
+            async function fetchData() {
+                try {
+                    const result = await fetchDataWithAsyncAwait();
+                    console.log(result);
+                } catch (error) {
+                    console.error(error);
+                }
+            }
+
+            fetchData();
+        </script>
+    </div>
+</body>
+</html>
