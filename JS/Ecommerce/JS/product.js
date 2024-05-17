@@ -1,3 +1,5 @@
+import { cartLogic } from "./common.js"
+
 let url = new URLSearchParams(window.location.search)
 let id = url.get("pid")
 const product= document.getElementById('product')
@@ -30,7 +32,12 @@ const displayData = (data) =>
      const image1 = document.createElement("img")
 		image1.src = i
      image1.alt = data.title
-     image1.style.height="50px"
+	 image1.style.height = "50px"
+	 image1.addEventListener('click', function ()
+	 {
+		 image.src = image1.src;
+		 image.alt = image1.alt;
+	 })
 		imgDiv.appendChild(image1)
  })
     leftDiv.append(image,imgDiv)
@@ -45,7 +52,8 @@ const displayData = (data) =>
     price.textContent = "$ " + data.price
    
 		const addCart = document.createElement("button")
-    addCart.textContent = "Add To Cart"
+	addCart.textContent = "Add To Cart"
+	addCart.addEventListener('click',cartLogic)
     rightDiv.append(link, price, addCart)
     product.append(leftDiv,rightDiv)
     

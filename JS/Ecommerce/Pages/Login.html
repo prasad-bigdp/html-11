@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/common.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Some<span>Kart</span></div>
-        <div class="menu">
-            <button><a href="./Pages/checkout.html">cart</a><span id="count"></span></button>
-            <button id="login"><a href="./Pages/Login.html">Login</a></button>
-        </div>
-    </header>
-    <main id="main"></main>
-    <footer>This site belongs to Xyz &copy; 2024</footer>
-    <script src="./JS/index.js" type="module"></script>
-    <script src="./JS/common.js" type="module"></script>
+    <form action="">
+        <input type="email" name="email" id="email" placeholder="enter email"><br><br>
+        <input type="password" name="passwrod" id="password" placeholder="Enter password"> <br><br>
+        <button type="submit">Login</button>
+        <p>If not registered, <a href="./signup.html">Signup</a></p>
+    </form>
+    
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";

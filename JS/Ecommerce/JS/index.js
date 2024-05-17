@@ -1,7 +1,5 @@
 const mainDiv = document.getElementById('main')
-let cart = [];
-
-document.getElementById("count").textContent = cart.length
+import { cartLogic } from "./common.js";
 const fetchData = async () =>
 {
     try
@@ -49,11 +47,4 @@ const displayData = (arr) =>
         proDiv.append(image, link, price, addCart);
         mainDiv.appendChild(proDiv)
     })
-}
-const cartLogic = (p) =>
-{
-    cart.push(p)
-    localStorage.setItem('cart', JSON.stringify(cart));
-    document.getElementById('count').textContent=cart.length
-    
 }

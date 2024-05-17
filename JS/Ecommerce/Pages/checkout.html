@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin: 10px;
+        }
+        img{
+            height: 100px;
+        }
+        #footer{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div id="checkoutDiv">
+
+    </div>
+    <div id="footer">
+        <div>Total: <span  id="total"></span></div>
+        <div id="checkoutButton">
+            <form>
+                <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OBSX5xXta2KIHu"
+                    async> </script>
+            </form>
+        </div>
+    </div>
+    <script src="../JS/checkout.js"></script>
+</body>
+</html>

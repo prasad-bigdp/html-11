@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/common.css">
     <style>
-        #Product{
+        #product{
             display: flex;
             justify-content: space-around;
         }
@@ -16,7 +16,7 @@
     <header>
         <div class="logo">Some<span>Kart</span></div>
         <div class="menu">
-            <button>cart<span id="count"></span></button>
+            <button><a href="./checkout.html">cart</a><span id="count"></span></button>
             <button id="login">Login</button>
         </div>
     </header>
@@ -27,7 +27,8 @@
         </div>
     </main>
 <footer>This site belongs to Xyz &copy; 2024</footer>
-<script src="../JS/product.js"></script>
+<script src="../JS/product.js" type="module"></script>
+<script type="module" src="../JS/common.js"></script>
     
 </body>
 </html>
