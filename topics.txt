@@ -1,4 +1,4 @@
-BAsics of Internet
+Basics of Internet
 blogging(hashnode)
 git and github
 HTML
@@ -46,21 +46,23 @@ JS TOPICS:
 variables(var,let,const),
 hoisting,execution content,call stack
 data types(math methods,string methods, boolean,undefined,null)
-array,objects
+array - array methods(map,filter,reduce),objects
 functions(callback,closure,fn expression)
 DOM(selection,manipulation,create)
 DOM(styling,classes)
 Events(listners vs handlers,propagration-bubbling,capturing, delgation)
 async(timers-settimeout,setinterval)
-fetch
+fetch,axios
 promises
 async await
 API's- with and without key
 axios
-lexical scope(this)
+lexical scope(this)-- call,apply,bind
 ES6 - arrow, rest vs spread, destructuring
-
-
+OOP: classes and objects
+"use strict"
+module -- import and export
+BOM
 
 
 
